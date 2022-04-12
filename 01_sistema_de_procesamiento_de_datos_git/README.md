@@ -188,6 +188,7 @@ Se realiza en un servidor que se encargará de recibir y dar los cambios realiza
   |      de         |
   |   versiones     |
   -------------------
+    ^             ^
     |            |
     V            V
 -----------  -----------
@@ -196,7 +197,29 @@ Se realiza en un servidor que se encargará de recibir y dar los cambios realiza
   USUARIO1   USUARIO2
 ```
 
+- 3.**Distribuidos**: Cada usuario tiene su propio repositorio. Los distintos repositorios pueden intercambiar y mezclar revisiones entre ellos. Es frecuente el uso de un repositorio, que está normalmente disponible, que sirve de punto de sincronización de los distintos repositorios locales.
 
+El modelo distribuido es el más utilizado, en este caso cada usuario tiene un control de versiones propio que a su vez son manejadas por el servidor.
+
+```
+          Modelo distribuido
+
+             SERVIDOR
+  ------------------------------
+  |          control           |
+  |            de              |
+  |         versiones          |
+  ------------------------------
+     ^                       ^
+     |                       |
+     V                       V
+-----------------------   ------------------------
+| control             |   | control              |
+|    de   <-> archivo |   |   de    <-> archivos |
+| versiones           |   | versiones            |
+-----------------------   ------------------------ 
+    USUARIO1                       USUARIO2
+```
 
 ---
 
