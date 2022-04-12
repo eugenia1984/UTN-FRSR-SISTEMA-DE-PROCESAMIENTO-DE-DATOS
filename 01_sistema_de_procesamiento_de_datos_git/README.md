@@ -1,4 +1,4 @@
-# :star: Sistema y Procesamiento de Datos: GIT
+# :book: Sistema y Procesamiento de Datos: GIT
 
 ---
 
@@ -13,27 +13,27 @@ Temas:
 
 ## :book: Sistema de procesamiento de datos
 
-### El proceso de datos:
+### :star: El proceso de datos:
 
 Un proceso es una sucesión de acciones relacionadas, que transforman elemento de entrada en resultados.
 
 En un proceso de datos estos son los “Input” (materia prima) constituida por símbolos, y el output también son símbolos que constituyen información.
 
 
-### Información: 
+### :star: Información: 
 
 Sirve para tomar decisiones, para un accionar concreto (presente o futuro), y se obtiene realizando operaciones  sobre los datos permitiéndonos tomar conocimiento de algún aspecto de la realidad desconocido.
 
 Se la conoce como procesamiento. Para ser utilizado por una computadora, los datos deben primero ser convertidos en un formato legible por máquina. Una vez que los datos están en formato digital, se pueden aplicar varios procedimientos sobre los datos para obtener información útil.
 
-### El Proceso Automático de un computador:
+### :star: El Proceso Automático de un computador:
 
 Debemos tener en cuenta que en esencia una computadora o Equipo lleva acabo un proceso de datos velozmente y en forma automática, sin intervención humana durante ese procesamiento.
 Los datos se escriben en su memoria que también recibe las instrucciones para ejecutar cada proceso de datos que se quiere realizar, las cuales son ejecutadas por el procesador (Pentium, I3, I5, etc.)
 
 Cada conjunto de instrucciones pueden cambiar rápida y fácilmente en su memoria. Cada computadora o equipo puede realizar tantos procesos de datos de diferente índole como se quiera (procesar textos, para juegos, dibujar, procesador de imágenes, etc.)
 
-### Un programa: 
+### :star:  Un programa: 
 
 Se basa en el conjunto de instrucciones que sigue el ordenador para ejecutarse.  
 La programación es lo que permite que un ordenador funcione y realice las tareas que el usuario solicita.
@@ -45,17 +45,17 @@ Las instrucciones que sigue el ordenador para la ejecución de aplicaciones y pr
 Los programas informáticos suelen seguir algoritmos, que son el conjunto de instrucciones organizadas y relacionadas entre sí que permiten trabajar al software de los equipos de computación.
 
 
-###  ¿Qué es el Hardware? 
+###  :star: ¿ Qué es el Hardware? 
 
 Es la parte física que da soporte y que permite el desarrollo de un proceso de datos.
 
-###  ¿Qué es el Software?
+###  :star: ¿ Qué es el Software?
 
 Es el programa con el que vamos a llevar  a cabo ese desarrollo del procesamiento de datos. Es la parte intangible de nuestra computadora.
 
 ---
 
-## Conceptos básicos:
+## :star: Conceptos básicos:
 
 -	**bit**: es la unidad básica de almacenamiento de datos informáticos.
 
@@ -73,7 +73,7 @@ Es el programa con el que vamos a llevar  a cabo ese desarrollo del procesamient
 
 ---
 
-## Etapas de procesamiento de Datos:
+## :star: Etapas de procesamiento de Datos:
 
 - **Recopilación de datos**: La recopilación de datos es el primer paso en el procesamiento de datos. Los datos se obtienen de las fuentes disponibles, incluidos los archivos de texto y los almacenes de datos.
 
@@ -90,18 +90,13 @@ Es el programa con el que vamos a llevar  a cabo ese desarrollo del procesamient
 -	**Dar Salida**: exteriorizar, obtener del sistema datos resultantes.
 
 
----
-
-
-
-
 
 ---
 ---
 
 ## :book: GIT
 
-## :start: ¿Qué es ?
+### :star: ¿Qué es ?
 
 Es una herramienta de control de versiones que permite alojar los diferentes proyectos en los que estén trabajando, permitiendo gestionar de forma muy simple y gráfica las diferentes versiones o modificaciones que se vayan realizando en cada uno de sus proyectos.
 
@@ -109,7 +104,7 @@ Fue desarrollada por Linux Torvalds creador del núcleo Linux.
 
 ---
 
-## Definición, clasificación y funcionamiento
+###  :star: Definición, clasificación y funcionamiento
 
 Se llama control de versiones a la gestión delos diversos cambios que se realizan sobre los elementos de algún producto o una configuración del mismo. Una versión, revisión o edición de un producto, es el estado en el que se encuentra dicho producto en un momento dado de su desarrollo o modificación. Aunque un sistema de control de versiones puede realizarse de forma manual, es muy aconsejable disponer de herramientas que faciliten esta gestión dando lugar a los llamados sistemas de control de versiones o SVC (del inglés System Version Control). Estos sistemas facilitan la administración de las distintas versiones de cada producto desarrollado, así como las posibles especializaciones realizadas (por ejemplo, para algún cliente específico). 
 
@@ -137,7 +132,7 @@ Algunos Ejemplos de este tipo de herramientas son entre otros:
 
 ---
 
-## Git es como un diario de viaje:
+### :star: Git es como un diario de viaje:
 
 -	Una Bitácora de un Capitán que va dejando todo los registro de las rutas de sus viajes.
 
@@ -147,13 +142,13 @@ Algunos Ejemplos de este tipo de herramientas son entre otros:
 
 ---
 
-## Ventajas de Git:
+### :star: Ventajas de Git:
 
 -	Podemos trabajar a nivel local sin tener que comprometer el repositorio principal a cada cambio que realicemos.
 
 -	Gracias a este sistema, los desarrolladores del proyecto podrán trabajar de forma independiente hasta el momento en el que tengan que poner en común con el resto del equipo su código, controlando los cambios en las versiones y mejorando el seguimiento al desarrollo.
 
-## Terminología:
+###  :star: Terminología:
 
 -	Repositorio ("repository") El repositorio es el lugar en el que se almacenan los datos actualizados e históricos de cambios.
 
@@ -223,10 +218,10 @@ El modelo distribuido es el más utilizado, en este caso cada usuario tiene un c
 
 ---
 
-## :start : Repaso de la instalación:
+### :start : Repaso de la instalación:
 
 
-## Instalar GIT en diferentes sistemas operativos.
+### Instalar GIT en diferentes sistemas operativos.
 
 -	Linux (Debian): sudo apt install git
 
@@ -238,8 +233,7 @@ El modelo distribuido es el más utilizado, en este caso cada usuario tiene un c
 
 **En el proceso de instalación en Windows, es importante seleccionar la opción de Git Bash**
 
-
-## ¿Cómo verificar si ya está instalado GIT?
+### :star: ¿Cómo verificar si ya está instalado GIT?
 
 - En Linux o MacOS: abrir la terminal y ejecutar el comando git
 
@@ -250,12 +244,12 @@ Para conocer que versión de GIT está instalada.
 
 ```git –version```
 
-## Ejecutar desde Git Bach:
+### :star:  Ejecutar desde Git Bach:
 
 Comenzamos configurando Git en nuestra ventana de comando Git bash. Digitamos el siguiente comando  y luego damos **Enter**.
 
 
-## Comandos para la configuración de GIT.
+###  :star: Comandos para la configuración de GIT.
 
 - **Git config**: es un comando que permite configurar  todos los aspectos de cómo funcionará Git de manera local, global o system.
 
@@ -290,7 +284,7 @@ Prioridad:  ```•	Local > Global > System```
 
 ---
 
-## Para configurar el usuario que va a escribir en la bitácora.
+### :star: Para configurar el usuario que va a escribir en la bitácora.
 
 Esto mostrará datos de la identidad con la que hemos creado el usuario así como otros datos de la máquina con la que estamos trabajando. Con git config podremos configurar git para registrar diferente identidades, por si usamos un ordenador para diferentes desarrolladores o si nos interesa registrar los cambios bajo diferentes nombres. Esto lo podemos realizar mediante los comandos:
 ```
@@ -311,7 +305,7 @@ git config --l (atajo)
 
 ---
 
-##  ¿Cómo creas tu primer repositorio?
+### :star:   ¿Cómo creas tu primer repositorio?
 
 El comando **ls** muestra todos los archivos en carpeta.
 
@@ -327,8 +321,22 @@ Ejemplo: ``` mkdir nombre-del-proyecto```
 
 ---
 
+### :star:  Actividad 1: Git: tarea para próxima clase.
 
+Crear un carpeta de Git con usuario local con sus nombre, apellido y el e-mail.
 
+Todas las carpetas que van a crear para trabajar en Phyton o Java, deben crearse desde el repositorio de Git.
+
+Ej:    
+```
+mkdir phyton
+git init
+```
+
+Se creará la carpeta phyton desde Git
+
+---
+---
 
 
 
