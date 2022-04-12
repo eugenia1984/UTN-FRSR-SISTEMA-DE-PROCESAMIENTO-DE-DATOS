@@ -307,6 +307,27 @@ git config --list
 git config --l (atajo) 
 ```
 
+*Escribir Clear para limpiar nuestra terminal o salir con q*
+
+---
+
+##  ¿Cómo creas tu primer repositorio?
+
+El comando **ls** muestra todos los archivos en carpeta.
+
+El comando **mkdir** (make directory) crea una carpeta.
+
+Ejemplo: ``` mkdir nombre-del-proyecto```
+
+```cd nombre-del-proyecto/``` (para entrar a la carpeta existente).
+
+```git init``` (una vez dentro de la carpeta, ejecutar este comando).
+
+*Todos los archivos y carpetas que empiezan con . (punto) son archivos o carpetas ocultos*
+
+---
+
+
 
 
 
