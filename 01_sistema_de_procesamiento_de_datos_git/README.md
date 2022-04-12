@@ -223,6 +223,90 @@ El modelo distribuido es el más utilizado, en este caso cada usuario tiene un c
 
 ---
 
+## :start : Repaso de la instalación:
+
+
+## Instalar GIT en diferentes sistemas operativos.
+
+-	Linux (Debian): sudo apt install git
+
+-	Linux (Centos): sudo yum install git
+
+-	MacOS: brew install git (O descargar instalador).
+
+-	Windows: Descargar Instalador.
+
+**En el proceso de instalación en Windows, es importante seleccionar la opción de Git Bash**
+
+
+## ¿Cómo verificar si ya está instalado GIT?
+
+- En Linux o MacOS: abrir la terminal y ejecutar el comando git
+
+- Windows: buscar o ejecutar el programa Git Bash.
+
+Para conocer que versión de GIT está instalada.
+
+
+```git –version```
+
+## Ejecutar desde Git Bach:
+
+Comenzamos configurando Git en nuestra ventana de comando Git bash. Digitamos el siguiente comando  y luego damos **Enter**.
+
+
+## Comandos para la configuración de GIT.
+
+- **Git config**: es un comando que permite configurar  todos los aspectos de cómo funcionará Git de manera local, global o system.
+
+-	**git config** mantiene su valor entre actualizaciones. Por lo tanto, se debe configurar solo una vez. Todos los archivos de configuración tienen la misma sintaxis, pero un alcance diferente. Esto ofrece mucha flexibilidad.
+
+Existe 3  comandos para el almacenamiento:
+
+-	Local.
+
+- Global.
+
+-	System.
+
+Además, es importante recordar que cada nivel anula los valores del nivel anterior.
+
+Prioridad:  ```•	Local > Global > System```
+
+
+- **Local**: las configuraciones locales están disponibles solo para el repositorio actual. Puede hacer que git lea y escriba desde la computadora que se está utilizando solo localmente .
+
+```  git config --local ```
+
+-	**Global**: las configuraciones globales están disponibles para los usuarios actuales para todos los proyectos.
+
+```git config --global```
+
+-	**System**: ésta configuración están disponibles para cada usuario en el sistema y se requiere que tengas permisos de administración.
+
+```git config –system```
+
+**En nuestra primera actividad de Git colocaremos nuestras firmas con nombre y apellido y correo con configuración local**
+
+---
+
+## Para configurar el usuario que va a escribir en la bitácora.
+
+Esto mostrará datos de la identidad con la que hemos creado el usuario así como otros datos de la máquina con la que estamos trabajando. Con git config podremos configurar git para registrar diferente identidades, por si usamos un ordenador para diferentes desarrolladores o si nos interesa registrar los cambios bajo diferentes nombres. Esto lo podemos realizar mediante los comandos:
+```
+git config --local user.name "Nombre Apellido"
+```
+
+```
+git config --local user.email "tuemail@ejemplo.com" (para configurar el usuario que va a escribir en la "Bitácora" desde una máquina).
+```
+
+Para traer todas las actualizaciones que hemos realizado
+```
+git config --list
+git config --l (atajo) 
+```
+
 
 
 
