@@ -174,6 +174,30 @@ PUEDEN SER :
   Usuario
 ```
 
+- 2.**Centralizados**: Existe un repositorio centralizado de todo el código, del cual es responsable un único usuario (o conjunto de ellos). Se facilitan las tareas administrativas a cambio de reducir flexibilidad, pues todas las decisiones fuertes (como crear una nueva rama) necesitan la aprobación del responsable. 
+
+Se realiza en un servidor que se encargará de recibir y dar los cambios realizados en el archivo a cada uno de los usuarios.
+
+
+```
+  Modelo centralizado
+
+      SERVIDOR
+  -------------------
+  |    control      |
+  |      de         |
+  |   versiones     |
+  -------------------
+    |            |
+    V            V
+-----------  -----------
+| archivo |  | archivo |
+-----------  ----------- 
+  USUARIO1   USUARIO2
+```
+
+
+
 ---
 
 
