@@ -338,7 +338,21 @@ Se creará la carpeta phyton desde Git
 ---
 ---
 
+## :star: Algunos comandos
 
+​```git init ``` -> ver master
+
+``` git config ``` -> configuracion
+
+``` mkdir nombre_de_la_carpeta``` -> crear carpeta
+
+``` rmdir ``` -> borrar carpeta
+
+```cd nombre_de_la_carpeta``` -> ver carpeta
+
+``` git --list``` -> ver lo creado
+
+``` clear ``` -> limpiar pantalla
 
 ---
 ---
