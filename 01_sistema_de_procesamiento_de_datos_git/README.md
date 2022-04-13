@@ -13,18 +13,24 @@ Temas:
 
 ## :book: Sistema de procesamiento de datos
 
+
 ### :star: El proceso de datos:
+
 
 Un proceso es una sucesión de acciones relacionadas, que transforman elemento de entrada en resultados.
 
 En un proceso de datos estos son los “Input” (materia prima) constituida por símbolos, y el output también son símbolos que constituyen información.
 
 
+
 ### :star: Información: 
+
 
 Sirve para tomar decisiones, para un accionar concreto (presente o futuro), y se obtiene realizando operaciones  sobre los datos permitiéndonos tomar conocimiento de algún aspecto de la realidad desconocido.
 
 Se la conoce como procesamiento. Para ser utilizado por una computadora, los datos deben primero ser convertidos en un formato legible por máquina. Una vez que los datos están en formato digital, se pueden aplicar varios procedimientos sobre los datos para obtener información útil.
+
+
 
 ### :star: El Proceso Automático de un computador:
 
@@ -32,6 +38,8 @@ Debemos tener en cuenta que en esencia una computadora o Equipo lleva acabo un p
 Los datos se escriben en su memoria que también recibe las instrucciones para ejecutar cada proceso de datos que se quiere realizar, las cuales son ejecutadas por el procesador (Pentium, I3, I5, etc.)
 
 Cada conjunto de instrucciones pueden cambiar rápida y fácilmente en su memoria. Cada computadora o equipo puede realizar tantos procesos de datos de diferente índole como se quiera (procesar textos, para juegos, dibujar, procesador de imágenes, etc.)
+
+
 
 ### :star:  Un programa: 
 
@@ -57,7 +65,8 @@ Es el programa con el que vamos a llevar  a cabo ese desarrollo del procesamient
 
 ## :star: Conceptos básicos:
 
--	**bit**: es la unidad básica de almacenamiento de datos informáticos.
+
+- **bit**: es la unidad básica de almacenamiento de datos informáticos.
 
 - **Un campo**: es un elemento de información que puede almacenarse.
 
@@ -65,15 +74,18 @@ Es el programa con el que vamos a llevar  a cabo ese desarrollo del procesamient
 
 - **Un archivo**: está compuesto por una colección de registros.
 
--	**Dato**: Los datos pueden ser cualquier número o carácter que puede representar los valores de las mediciones o los fenómenos observables.
+- **Dato**: Los datos pueden ser cualquier número o carácter que puede representar los valores de las mediciones o los fenómenos observables.
 
 - **base de datos**: es una colección integrada de registros relacionados lógicamente.
 
--	**Conversión de Datos**: implica el cambio de datos en otro formato, y no implica ninguna manipulación de datos.
+- **Conversión de Datos**: implica el cambio de datos en otro formato, y no implica ninguna manipulación de datos.
+
 
 ---
 
+
 ## :star: Etapas de procesamiento de Datos:
+
 
 - **Recopilación de datos**: La recopilación de datos es el primer paso en el procesamiento de datos. Los datos se obtienen de las fuentes disponibles, incluidos los archivos de texto y los almacenes de datos.
 
@@ -85,9 +97,9 @@ Es el programa con el que vamos a llevar  a cabo ese desarrollo del procesamient
 
 - **Interpretación de los datos**: La etapa de salida / interpretación es la etapa en la que los datos son finalmente utilizables para los usuarios. Se traducen los datos, se pueden leer, y  a menudo en forma de gráficos, videos, imágenes, texto sin formato, etc.).
 
--	**Almacenamiento de datos**: La etapa final del procesamiento de datos es el almacenamiento. Una vez que se procesan todos los datos, se almacenan para su uso futuro. Si bien es posible que alguna información se use de inmediato, gran parte de ella tendrá un propósito más adelante
+- **Almacenamiento de datos**: La etapa final del procesamiento de datos es el almacenamiento. Una vez que se procesan todos los datos, se almacenan para su uso futuro. Si bien es posible que alguna información se use de inmediato, gran parte de ella tendrá un propósito más adelante
 
--	**Dar Salida**: exteriorizar, obtener del sistema datos resultantes.
+- **Dar Salida**: exteriorizar, obtener del sistema datos resultantes.
 
 
 
@@ -96,17 +108,25 @@ Es el programa con el que vamos a llevar  a cabo ese desarrollo del procesamient
 
 ## :book: GIT
 
+
 ### :star: ¿Qué es ?
+
 
 Es una herramienta de control de versiones que permite alojar los diferentes proyectos en los que estén trabajando, permitiendo gestionar de forma muy simple y gráfica las diferentes versiones o modificaciones que se vayan realizando en cada uno de sus proyectos.
 
 Fue desarrollada por Linux Torvalds creador del núcleo Linux.
 
+
 ---
 
 ###  :star: Definición, clasificación y funcionamiento
 
-Se llama control de versiones a la gestión delos diversos cambios que se realizan sobre los elementos de algún producto o una configuración del mismo. Una versión, revisión o edición de un producto, es el estado en el que se encuentra dicho producto en un momento dado de su desarrollo o modificación. Aunque un sistema de control de versiones puede realizarse de forma manual, es muy aconsejable disponer de herramientas que faciliten esta gestión dando lugar a los llamados sistemas de control de versiones o SVC (del inglés System Version Control). Estos sistemas facilitan la administración de las distintas versiones de cada producto desarrollado, así como las posibles especializaciones realizadas (por ejemplo, para algún cliente específico). 
+
+Se llama control de versiones a la gestión delos diversos cambios que se realizan sobre los elementos de algún producto o una configuración del mismo. Una versión, revisión o edición de un producto, es el estado en el que se encuentra dicho producto en un momento dado de su desarrollo o modificación. 
+
+Aunque un sistema de control de versiones puede realizarse de forma manual, es muy aconsejable disponer de herramientas que faciliten esta gestión dando lugar a los llamados sistemas de control de versiones o SVC (del inglés System Version Control). 
+
+Estos sistemas facilitan la administración de las distintas versiones de cada producto desarrollado, así como las posibles especializaciones realizadas (por ejemplo, para algún cliente específico). 
 
 Algunos Ejemplos de este tipo de herramientas son entre otros: 
 
@@ -132,7 +152,9 @@ Algunos Ejemplos de este tipo de herramientas son entre otros:
 
 ---
 
+
 ### :star: Git es como un diario de viaje:
+
 
 -	Una Bitácora de un Capitán que va dejando todo los registro de las rutas de sus viajes.
 
@@ -140,20 +162,28 @@ Algunos Ejemplos de este tipo de herramientas son entre otros:
 
 -	Ese registro se va a llevar a cabo con los commit.
 
+
 ---
 
 ### :star: Ventajas de Git:
 
--	Podemos trabajar a nivel local sin tener que comprometer el repositorio principal a cada cambio que realicemos.
 
--	Gracias a este sistema, los desarrolladores del proyecto podrán trabajar de forma independiente hasta el momento en el que tengan que poner en común con el resto del equipo su código, controlando los cambios en las versiones y mejorando el seguimiento al desarrollo.
+- Podemos trabajar a nivel local sin tener que comprometer el repositorio principal a cada cambio que realicemos.
+
+- Gracias a este sistema, los desarrolladores del proyecto podrán trabajar de forma independiente hasta el momento en el que tengan que poner en común con el resto del equipo su código, controlando los cambios en las versiones y mejorando el seguimiento al desarrollo.
+
+
+---
+
 
 ###  :star: Terminología:
 
--	Repositorio ("repository") El repositorio es el lugar en el que se almacenan los datos actualizados e históricos de cambios.
+
+- Repositorio ("repository") El repositorio es el lugar en el que se almacenan los datos actualizados e históricos de cambios.
 
 
 PUEDEN SER :
+
 
 - 1.**Locales**: Los cambios son guardados localmente y no se comparten con nadie. Esta arquitectura es la antecesora de las dos siguientes. El modelo local utiliza una copia de la base de control de versiones y una copia de los archivos del proyecto. Este tipo es el más sencillo y no es recomendable cuando se trabaja en equipo ya que todos tienen que acceder a los mismos archivos.
 
@@ -168,6 +198,7 @@ PUEDEN SER :
 
   Usuario
 ```
+
 
 - 2.**Centralizados**: Existe un repositorio centralizado de todo el código, del cual es responsable un único usuario (o conjunto de ellos). Se facilitan las tareas administrativas a cambio de reducir flexibilidad, pues todas las decisiones fuertes (como crear una nueva rama) necesitan la aprobación del responsable. 
 
@@ -184,8 +215,8 @@ Se realiza en un servidor que se encargará de recibir y dar los cambios realiza
   |   versiones     |
   -------------------
     ^             ^
-    |            |
-    V            V
+    |             |
+    V             V
 -----------  -----------
 | archivo |  | archivo |
 -----------  ----------- 
@@ -221,6 +252,7 @@ El modelo distribuido es el más utilizado, en este caso cada usuario tiene un c
 ### :start : Repaso de la instalación:
 
 
+
 ### Instalar GIT en diferentes sistemas operativos.
 
 -	Linux (Debian): sudo apt install git
@@ -231,9 +263,13 @@ El modelo distribuido es el más utilizado, en este caso cada usuario tiene un c
 
 -	Windows: Descargar Instalador.
 
+
 **En el proceso de instalación en Windows, es importante seleccionar la opción de Git Bash**
 
+
+
 ### :star: ¿Cómo verificar si ya está instalado GIT?
+
 
 - En Linux o MacOS: abrir la terminal y ejecutar el comando git
 
@@ -249,47 +285,68 @@ Para conocer que versión de GIT está instalada.
 Comenzamos configurando Git en nuestra ventana de comando Git bash. Digitamos el siguiente comando  y luego damos **Enter**.
 
 
+
 ###  :star: Comandos para la configuración de GIT.
+
 
 - **Git config**: es un comando que permite configurar  todos los aspectos de cómo funcionará Git de manera local, global o system.
 
--	**git config** mantiene su valor entre actualizaciones. Por lo tanto, se debe configurar solo una vez. Todos los archivos de configuración tienen la misma sintaxis, pero un alcance diferente. Esto ofrece mucha flexibilidad.
+- **git config** mantiene su valor entre actualizaciones. Por lo tanto, se debe configurar solo una vez. Todos los archivos de configuración tienen la misma sintaxis, pero un alcance diferente. Esto ofrece mucha flexibilidad.
+
 
 Existe 3  comandos para el almacenamiento:
 
--	Local.
+- Local.
 
 - Global.
 
--	System.
+- System.
+
 
 Además, es importante recordar que cada nivel anula los valores del nivel anterior.
 
-Prioridad:  ```•	Local > Global > System```
+
+Prioridad:  ```	Local > Global > System```
+
 
 
 - **Local**: las configuraciones locales están disponibles solo para el repositorio actual. Puede hacer que git lea y escriba desde la computadora que se está utilizando solo localmente .
 
 ```  git config --local ```
 
--	**Global**: las configuraciones globales están disponibles para los usuarios actuales para todos los proyectos.
+
+
+- **Global**: las configuraciones globales están disponibles para los usuarios actuales para todos los proyectos.
 
 ```git config --global```
 
--	**System**: ésta configuración están disponibles para cada usuario en el sistema y se requiere que tengas permisos de administración.
+
+
+- **System**: ésta configuración están disponibles para cada usuario en el sistema y se requiere que tengas permisos de administración.
 
 ```git config –system```
 
+
 **En nuestra primera actividad de Git colocaremos nuestras firmas con nombre y apellido y correo con configuración local**
+
 
 ---
 
+
 ### :star: Para configurar el usuario que va a escribir en la bitácora.
 
-Esto mostrará datos de la identidad con la que hemos creado el usuario así como otros datos de la máquina con la que estamos trabajando. Con git config podremos configurar git para registrar diferente identidades, por si usamos un ordenador para diferentes desarrolladores o si nos interesa registrar los cambios bajo diferentes nombres. Esto lo podemos realizar mediante los comandos:
+
+
+Esto mostrará datos de la identidad con la que hemos creado el usuario así como otros datos de la máquina con la que estamos trabajando. 
+
+Con **git config** podremos configurar git para registrar diferente identidades, por si usamos un ordenador para diferentes desarrolladores o si nos interesa registrar los cambios bajo diferentes nombres. 
+
+Esto lo podemos realizar mediante los comandos:
+
 ```
 git config --local user.name "Nombre Apellido"
 ```
+
 
 ```
 git config --local user.email "tuemail@ejemplo.com" (para configurar el usuario que va a escribir en la "Bitácora" desde una máquina).
@@ -305,25 +362,32 @@ git config --l (atajo)
 
 ---
 
+
 ### :star:   ¿Cómo creas tu primer repositorio?
+
 
 El comando **ls** muestra todos los archivos en carpeta.
 
-El comando **mkdir** (make directory) crea una carpeta.
 
-Ejemplo: ``` mkdir nombre-del-proyecto```
+El comando **mkdir** (make directory) crea una carpeta. Ejemplo: ``` mkdir nombre-del-proyecto```
+
 
 ```cd nombre-del-proyecto/``` (para entrar a la carpeta existente).
 
+
 ```git init``` (una vez dentro de la carpeta, ejecutar este comando).
 
+
 *Todos los archivos y carpetas que empiezan con . (punto) son archivos o carpetas ocultos*
+
 
 ---
 
 ### :star:  Actividad 1: Git: tarea para próxima clase.
 
+
 Crear un carpeta de Git con usuario local con sus nombre, apellido y el e-mail.
+
 
 Todas las carpetas que van a crear para trabajar en Phyton o Java, deben crearse desde el repositorio de Git.
 
@@ -340,19 +404,33 @@ Se creará la carpeta phyton desde Git
 
 ## :star: Algunos comandos
 
+
+```ls``` muestra todos los archivos del directorio
+
+
+```cd nombre_de_directorio_o_archivo```  para entrar a un directorio u archivo existente, tipeando las primeras letras y tab se autocompleta, tambien se puede copiar una ruta para entrar hacia adentro de un directorio.
+
+
 ​```git init ``` -> ver master
+
 
 ``` git config ``` -> configuracion
 
+
 ``` mkdir nombre_de_la_carpeta``` -> crear carpeta
 
-``` rmdir ``` -> borrar carpeta
+
+``` mkdir ``` -> borrar carpeta
+
 
 ```cd nombre_de_la_carpeta``` -> ver carpeta
 
+
 ``` git --list``` -> ver lo creado
 
+
 ``` clear ``` -> limpiar pantalla
+
 
 ---
 ---
