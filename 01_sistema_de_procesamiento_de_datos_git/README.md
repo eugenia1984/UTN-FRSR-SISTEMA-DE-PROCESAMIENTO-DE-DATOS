@@ -426,11 +426,28 @@ Se creará la carpeta phyton desde Git
 
 ```cd nombre_de_directorio_o_archivo```  para entrar a un directorio u archivo existente, tipeando las primeras letras y tab se autocompleta, tambien se puede copiar una ruta para entrar hacia adentro de un directorio.
 
+```git --version``` -> para ver la version de git y asegurarnos esta instalado
 
-​```git init ``` -> ver master
+Para hacer una configuracion global:
+
+``` git config --global user.name "userName"``` -> comando para configurar nombre de usuario
+
+```git config --global user.name "userEmail" ``` -> comando para configurar email de usuario
+
+``` git config --global -e ``` -> comando para visualizar la configuración realizada, esto nos muestra un archivo de configuración
+
+
+```"Esc" + :q ``` ->comando para salir de un archivo
+
+
+
+​```git init ``` ->  comando para inicializar git, inicializa un repositorio vacío (proyecto = repositorio)
 
 
 ``` git config ``` -> configuracion
+
+
+```git status ``` -> comando para visualizar estado del repositorio
 
 
 ``` mkdir nombre_de_la_carpeta``` -> crear carpeta
@@ -445,8 +462,120 @@ Se creará la carpeta phyton desde Git
 ``` git --list``` -> ver lo creado
 
 
-``` clear ``` -> limpiar pantalla
+``` clear ``` -> limpiar pantalla/ consola
 
+
+```git add . ``` ->comando para agregar seguimiento a archivos no tenidos en cuenta, el . se puede reemplazar por el nombre exacto del archivo a agregar
+
+```  git commit -m "nombreDelCommit"``` -> comando para mandar actualización del repositorio
+
+```git checkout -- . ``` -> comando para hacer rollback tras un error (borrado de código/eliminación de archivos)
+
+
+---
+
+## Flujo de Uso de GIT: 
+
+"Al utilizar el comando 'git add .', Git lo que hace es pasar los archivos agregados a un 'stage' (escenario). De ahí Git se prepara para hacer un 'commit' que es como una fotografía del proyecto en ese punto específico del tiempo.
+
+Una vez realizado el 'commit', esos archivos pasan del 'stage' a la linea del tiempo.
+Así podemos ir repitiendo la secuencia hasta sincronizar todo el proyecto.
+Cada 'commit' es un espacio de la linea del tiempo; espacio al cuál podemos volver sin problemas."
+
+>> comando para visualizar el listado de commits realizados: git log
+
+
+//--> Comando Git Status
+¿Qué nos muestra?
+		//que estamos en la rama "master"
+		On branch master
+		//que tenemos cambios que no están en el "stage" paara hacer "commit"
+		Changes not staged for commit:
+		  //recomendaciones para hacer ese "commit" pendiente
+		  (use "git add <file>..." to update what will be committed)
+		  (use "git restore <file>..." to discard changes in working directory)
+		        modified:   index.html
+		        modified:   readme.md
+
+		no changes added to commit (use "git add" and/or "git commit -a")
+
+>> git no reconoce carpetas nuevas vacías, sólo lo hace cuando tiene archivos en su interior
+
+>> comando para visualizar el estado reducido de un repositorio: git status -s
+		//la letra "M" significa que el archivo fue modificado
+		 M index.html
+		 M readme.md
+		//los "??" significa que es nuevo y no se está haciendo seguimiento del mismo
+		?? css/
+
+>> comando para visualizar el estado reducido de un repositorio y la rama en que nos encontramos: git status -s -b
+		//los "##" indican la rama en que nos encontramos
+		## master
+		 M index.html
+		 M readme.md
+		?? css/
+
+//--> Comando Git Add .
+Este comando nos permite agregar archivos al "stage"
+
+>> comando para quitar todos los archivos del "stage": git reset HEAD .
+
+>> comando para agregar un archivo específico al "stage": git add nombreArchivo.extension
+
+>> comando para agregar un tipo de archivo específico al "stage": git add *.extension
+
+//--> Comando Git Commit
+Nos permite hacer "commit" de los archivos que están en el "stage"
+
+>> git commit -m "Mensaje que queremos dejar"
+
+>> comando para escribir el "commit" en multilínea: git commit
+	--> esto nos lleva a otra pantalla donde con la letra "A" agregamos el título del "commit"
+	--> si presionamos enter nos permite escribir la descripción del "commit"
+	--> una vez realizado esto, presionamos "Esc" y escribimos ":wq" (hacer write y quit)
+Luego de realizar el "commit" nos aparece esta información:
+		[master 670d4fe] Agregamos diferentes archivos y carpetas al proyec
+		 3 files changed, 15 insertions(+), 17 deletions(-)
+		 create mode 100644 css/estilos.css
+		 create mode 100644 css/main.css
+		 rewrite index.html (69%)
+
+//--> Comando Git Tag
+Nos permite etiquetar los commits para no tener el código hash extenso y marcar versiones de un proyecto
+
+>> comando para asignar etiqueta: git tag nombreEtiqueta
+
+>> comando para conover etiqueta: git tag
+
+>> comando para borrar la etiqueta: git tag -d nombreEtiqueta
+
+>> comando para agregar mensaje: git tag -a nombreEtiqueta -m mensaje
+
+>> comando para ver la información oculta o mensajes de un tag: git show nombreEtiqueta
+
+Todo esto estamos agregando a nuestro último "commit" pero si quisiéramos modificar un "commit" anterior: git tag -a nombreEtiqueta hashCommit -m mensaje
+
+//--> Comando Git Log
+		commit 670d4feeca8c180693a3f639c4adea36e535cbf8 (HEAD -> master, tag: v1.0.0)
+		Author: marcosgfrites <marcosgfrites@gmail.com>
+		Date:   Fri Sep 24 10:26:10 2021 -0300
+
+		    Agregamos diferentes archivos y carpetas al proyec
+
+>> comando para ver información de cada commit de manera reducida: git log --oneline
+
+>> comando para ver la información del commit de manera reducida y gráfica (visualmente notable cuando trabajamos con muchas ramas): git log --oneline --decorate --all --graph
+
+>> comando para asignar un alias a un comando dificil de recordar: git config --global alias.aliasNuevo "comandoAAsignarAliasSinGit"
+
+//--> Comando Git Diff
+Nos permite comparar los cambios presentes entre el commit actual y uno especifico: git diff hashCommit
+
+>> comando para ver los cambios realizados sin agregarlos al stage: git diff
+
+>> comando para ver los cambios realizados agregados al stage pero sin hacer commit aún: git diff --staged
+
+>> comando para deshacer los cambios aún sin estar en el stage git checkout -- archivoModificado
 
 ---
 ---
