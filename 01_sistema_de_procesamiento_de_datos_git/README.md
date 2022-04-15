@@ -352,6 +352,22 @@ git config --local user.name "Nombre Apellido"
 git config --local user.email "tuemail@ejemplo.com" (para configurar el usuario que va a escribir en la "Bitácora" desde una máquina).
 ```
 
+**Y si lo queremos configurar de manera global:**
+
+
+```
+
+>> comando para configurar nombre de usuario: git config --global user.name "userName"
+
+>> comando para configurar email de usuario: git config --global user.name "userEmail"
+
+>> comando para visualizar la configuración realizada: git config --global -e > esto nos muestra un archivo de configuración
+
+>> comando para salir de un archivo: "Esc" + :q
+
+```
+
+
 Para traer todas las actualizaciones que hemos realizado
 ```
 git config --list
