@@ -781,12 +781,58 @@ Git --helo branch
 
 - Para guardar o aprobar (commit) ficheros en nuestro repositorio Git, primero
 
--
+
 
 
 ---
 
 En espacio de trabajo ya tenemos un archivo para enviar
+
+
+---
+
+### :star: Git status
+
+- permite visualizar el estado de los cambios en el directorio de trabajo
+
+- aun no tenemos un commit y nos avisa los archivos no traqueados en rojo
+
+- ``` git add ```
+
+- ```git status``` para ver el estado de nuestros archivos, si algo se modifico, si elimine algo, si agregue algo
+
+
+- una vez traqueado el archivo esta en color **verde**, esta listo para commitear
+
+---
+
+### :star: Commit
+
+
+
+### :star: Editor de texto vim
+
+- nos permite realizar los comentarios sobre las modificaciones que realicemos a nuestro proyecto
+
+- si no escribimos algo no nos hara un commit
+
+- **ctrl+c** para guardar el texto
+
+---
+
+### :star: Git log
+
+- veremos el primer commit
+
+- es la bitacora que muestra en pantalla todos los commits (todos los mensajes)
+
+- vemos el autor del commit
+
+---
+
+### :star: Tarea
+
+Crear el commit con los archivos agregados
 
 ---
 ---
