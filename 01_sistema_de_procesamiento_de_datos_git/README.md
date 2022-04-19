@@ -249,7 +249,7 @@ El modelo distribuido es el más utilizado, en este caso cada usuario tiene un c
 
 ---
 
-### :start : Repaso de la instalación:
+### :star: Repaso de la instalación:
 
 
 
@@ -474,7 +474,7 @@ Para hacer una configuracion global:
 
 ---
 
-## Flujo de Uso de GIT: 
+## :star: Flujo de Uso de GIT: 
 
 
 Al utilizar el comando ```git add .```, Git lo que hace es pasar los archivos agregados a un **stage** (escenario). De ahí Git se prepara para hacer un **commit** que es como una fotografía del proyecto en ese punto específico del tiempo.
@@ -523,7 +523,7 @@ La letra **M** significa que el archivo fue modificado:
 		 M readme.md
 ```
 
-Llos**??** significa que es nuevo y no se está haciendo seguimiento del mismo
+Los **??** significa que es nuevo y no se está haciendo seguimiento del mismo
 ```
 		?? css/
 ```
@@ -560,16 +560,16 @@ Nos permite hacer "commit" de los archivos que están en el "stage"
 ```git commit -m "Mensaje que queremos dejar"```
 
 
-``` git commit``` -> comando para escribir el "commit" en multilínea
+``` git commit``` -> comando para escribir el **commit** en multilínea
 
 
-- esto nos lleva a otra pantalla donde con la letra "A" agregamos el título del "commit"
+- esto nos lleva a otra pantalla donde con la letra **A** agregamos el título del **commit**
 
-- si presionamos enter nos permite escribir la descripción del "commit"
+- si presionamos enter nos permite escribir la descripción del **commit**
 
 - una vez realizado esto, presionamos **Esc** y escribimos **:wq** (hacer write y quit)
 
-- Luego de realizar el "commit" nos aparece esta información:
+- Luego de realizar el **commit** nos aparece esta información:
 ```
 		[master 670d4fe] Agregamos diferentes archivos y carpetas al proyec
 		 3 files changed, 15 insertions(+), 17 deletions(-)
@@ -605,7 +605,7 @@ Todo esto estamos agregando a nuestro último **commit** pero si quisiéramos mo
 ```
 
 
-- Agregamos diferentes archivos y carpetas al proyec
+- Agregamos diferentes archivos y carpetas al proyecto
 
 
 ```  git log --oneline ``` -> comando para ver información de cada commit de manera reducida
@@ -639,7 +639,7 @@ Nos permite comparar los cambios presentes entre el commit actual y uno especifi
 
 ---
 
-## Conceptos generales
+## :star: Conceptos generales
 
 ¿ Que es una version ?
 
@@ -647,13 +647,13 @@ Conjunto de nuevas caracteristicas y funcionalidades de un software
 
 
 
-### ¿Como saber si instale bien git?
+###  :star:  ¿Como saber si instale bien git?
 
 En git bash ``` git```
 
 
 
-### ¿Que es un commit ?
+### :star:  ¿Que es un commit ?
 
 - Cada vez que se guarda un trabajo, git crea un commit
 
@@ -662,7 +662,7 @@ En git bash ``` git```
 - Vamos a tener una rama principal **master/main** y cada **commit** va a ser un nuevo punto (en cada uno vemos un cambio)
 
 
-### ¿ Que es una rama?
+### :star:  ¿ Que es una rama?
 
 - Un conjunto de commits que se unene entre si y sufren diferentes cambios
 
@@ -680,7 +680,7 @@ En git bash ``` git```
 
 ---
 
-### estados de git
+### :star:  Estados de git
 
 **stage**
 
@@ -691,7 +691,7 @@ En git bash ``` git```
 --
 
 
-### Flujo de trabajo en git
+### :star:  Flujo de trabajo en git
 
 - editas uan serie de archivos en tu directorio de trabajo
 
@@ -701,7 +701,7 @@ En git bash ``` git```
 ---
 
 
-## Espacio de trabajo
+## :star:  Espacio de trabajo
 
 - todos los archivos que se pueden visualizar en carpeta
 
@@ -710,14 +710,14 @@ En git bash ``` git```
 
 ---
 
-### Carpetas ocultas en git
+### :star:  Carpetas ocultas en git
 
 vista -> elementos ocultos -> destildar ocultar archivo
 
 
 ---
 
-### Area de preparacion
+### :star:  Area de preparacion
 
 - Se ha marcado un archivo modificado en su version actual para que vaya
 
@@ -728,14 +728,14 @@ vista -> elementos ocultos -> destildar ocultar archivo
 ---
 
 
-### Area de repositorio
+### :star:  Area de repositorio
 
 - Repositorio = donde se alamcenan los datos actualizados e historicos de cambios que realicemos
 
 
 ---
 
-## Pasos realizados en clase 
+## :star: Pasos realizados en clase 
 
 ```
 Paso 1: abrimos terminal GIT BASH
@@ -775,7 +775,7 @@ Git --helo branch
 ---
 
 
-### Pasar al estado de preparacion
+### :star:  Pasar al estado de preparacion
 
 ``` git add <fichero>```
 
@@ -789,6 +789,5 @@ Git --helo branch
 En espacio de trabajo ya tenemos un archivo para enviar
 
 ---
-
-
 ---
+
