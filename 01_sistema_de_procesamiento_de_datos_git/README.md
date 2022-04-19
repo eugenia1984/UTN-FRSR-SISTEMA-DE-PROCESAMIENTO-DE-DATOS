@@ -1,4 +1,6 @@
-# :book: Sistema y Procesamiento de Datos: GIT
+# Primer clase : 12 abril
+
+## :book: Sistema y Procesamiento de Datos: GIT
 
 ---
 
@@ -635,7 +637,7 @@ Nos permite comparar los cambios presentes entre el commit actual y uno especifi
 ---
 
 
-# :book: Segunda clase
+# :book: Segunda clase: 19 Abril
 
 ---
 
