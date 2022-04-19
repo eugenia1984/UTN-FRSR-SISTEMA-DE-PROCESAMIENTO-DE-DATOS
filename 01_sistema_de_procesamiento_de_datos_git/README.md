@@ -476,11 +476,13 @@ Para hacer una configuracion global:
 
 ## Flujo de Uso de GIT: 
 
-"Al utilizar el comando 'git add .', Git lo que hace es pasar los archivos agregados a un 'stage' (escenario). De ahí Git se prepara para hacer un 'commit' que es como una fotografía del proyecto en ese punto específico del tiempo.
+Al utilizar el comando ```git add .```, Git lo que hace es pasar los archivos agregados a un **stage** (escenario). De ahí Git se prepara para hacer un **commit** que es como una fotografía del proyecto en ese punto específico del tiempo.
 
-Una vez realizado el 'commit', esos archivos pasan del 'stage' a la linea del tiempo.
+Una vez realizado el **commit**, esos archivos pasan del **stage** a la linea del tiempo.
+
 Así podemos ir repitiendo la secuencia hasta sincronizar todo el proyecto.
-Cada 'commit' es un espacio de la linea del tiempo; espacio al cuál podemos volver sin problemas."
+
+Cada **commit** es un espacio de la linea del tiempo; espacio al cuál podemos volver sin problemas.
 
 >> comando para visualizar el listado de commits realizados: git log
 
@@ -578,4 +580,146 @@ Nos permite comparar los cambios presentes entre el commit actual y uno especifi
 >> comando para deshacer los cambios aún sin estar en el stage git checkout -- archivoModificado
 
 ---
+---
+
+
+# Segunda clase
+
+## Conceptos generales
+
+¿Que es una version?
+
+Conjunto de nuevas caracteristicas y funcionalidades de un software
+
+
+### ¿Como saber si instale bien git?
+
+En git bash ``` git```
+
+
+### ¿Que es un commit ?
+
+Cada vez que se guarda un trabajo, git crea un commit
+
+Una confirmacion
+
+Vamos a tenr una rama principal **master/main** y cada **commit** va a ser un nuevo punto (en cada uno vemos un cambio)
+
+### ¿ Que es una rama?
+
+Un conjunto de commits que se unene entre si y sufren diferentes cambios
+
+En cada ca,bio debe hacerse un commit
+
+Las ramas auxiliares
+
+---
+
+- Git nos permite viajar en una linea del tiempo de nuestro proyecto 
+
+- Al trabajar en ramas auxiliares trabajamos en espacio temporal
+
+- Protegemos el proyecto en caso que las modificaciones sean fallidas
+
+---
+
+### estados de git
+
+**stage**
+
+**prepare**
+
+**carpeta .git**
+
+--
+
+
+### Flujo de trabajo en git
+
+- editas uan serie de archivos en tu directorio de trabajo
+
+- preparas los archivos que quieras subir al directoria, añadiendolos a tu area de preparacion
+
+---
+
+## Espacio de trabajo
+
+- todos los archivos que se pueden visualizar en carpeta
+
+- se ha modificado
+
+---
+
+### Carpetas ocultas en git
+
+vista -> elementos ocultos -> destildar ocultar archivo
+
+---
+
+### area de preparacion
+
+- Se ha marcado un archivo modificado en su version actual para que vaya
+
+- Aca es donde vamos a preparar los archivos que queremos utilizar o enviar al repositorio
+
+- Es un lugar temporal
+
+---
+
+### Area de repositorio
+
+- Repositorio = donde se alamcenan los datos actualizados e historicos de cambios que realicemos
+
+---
+
+## Parsos realizados en clase 
+
+```
+Paso 1: abrimos terminal GIT BASH
+Paso 2 : creamos carpeta TECNICATURA con MKDIR
+```
+
+Luego de haber creado las carpetas con
+```
+cd
+```
+entramos a la carpeta y ejecutamos 
+
+```
+git init
+```
+
+Todos los archivos que comienzan con **.** son carpetas ocultas
+
+Comandos:
+
+Para limpiar pantalla
+```
+ctrl + l -> limpia pantalla
+clear
+q
+```
+
+Ayuda
+```
+Git --helo branch
+```
+
+---
+
+### Pasar al estado de preparacion
+
+``` git add <fichero>```
+
+- Para guardar o aprobar (commit) ficheros en nuestro repositorio Git, primero
+
+-
+
+---
+
+En espacio de trabajo ya tenemos un archivo para enviar
+
+---
+
+
 ---
