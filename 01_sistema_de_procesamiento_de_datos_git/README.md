@@ -476,120 +476,175 @@ Para hacer una configuracion global:
 
 ## Flujo de Uso de GIT: 
 
+
 Al utilizar el comando ```git add .```, Git lo que hace es pasar los archivos agregados a un **stage** (escenario). De ahí Git se prepara para hacer un **commit** que es como una fotografía del proyecto en ese punto específico del tiempo.
+
 
 Una vez realizado el **commit**, esos archivos pasan del **stage** a la linea del tiempo.
 
+
 Así podemos ir repitiendo la secuencia hasta sincronizar todo el proyecto.
+
 
 Cada **commit** es un espacio de la linea del tiempo; espacio al cuál podemos volver sin problemas.
 
->> comando para visualizar el listado de commits realizados: git log
+
+```git log``` ->  comando para visualizar el listado de commits realizados
 
 
-//--> Comando Git Status
-¿Qué nos muestra?
-		//que estamos en la rama "master"
-		On branch master
-		//que tenemos cambios que no están en el "stage" paara hacer "commit"
-		Changes not staged for commit:
-		  //recomendaciones para hacer ese "commit" pendiente
-		  (use "git add <file>..." to update what will be committed)
-		  (use "git restore <file>..." to discard changes in working directory)
-		        modified:   index.html
-		        modified:   readme.md
+## git status
 
-		no changes added to commit (use "git add" and/or "git commit -a")
+¿Qué nos muestra? 
 
->> git no reconoce carpetas nuevas vacías, sólo lo hace cuando tiene archivos en su interior
+Que estamos en la rama "master" (on branch master)
 
->> comando para visualizar el estado reducido de un repositorio: git status -s
-		//la letra "M" significa que el archivo fue modificado
+Que tenemos cambios que no están en el **stage** paara hacer **commit**
+```
+Changes not staged for commit:
+```
+
+Recomendaciones para hacer ese **commit** pendiente:
+
+```
+use "git add <file>..." to update what will be committed
+use "git restore <file>..." to discard changes in working directory
+modified:   index.html
+modified:   readme.md
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+-  git no reconoce carpetas nuevas vacías, sólo lo hace cuando tiene archivos en su interior
+
+- Comando para visualizar el estado reducido de un repositorio: ```git status -s```
+
+La letra **M** significa que el archivo fue modificado:
+```
 		 M index.html
 		 M readme.md
-		//los "??" significa que es nuevo y no se está haciendo seguimiento del mismo
-		?? css/
+```
 
->> comando para visualizar el estado reducido de un repositorio y la rama en que nos encontramos: git status -s -b
-		//los "##" indican la rama en que nos encontramos
+Llos**??** significa que es nuevo y no se está haciendo seguimiento del mismo
+```
+		?? css/
+```
+
+- Comando para visualizar el estado reducido de un repositorio y la rama en que nos encontramos: ```git status -s -b```
+
+Los **##** indican la rama en que nos encontramos
+```
 		## master
 		 M index.html
 		 M readme.md
 		?? css/
+```
 
-//--> Comando Git Add .
-Este comando nos permite agregar archivos al "stage"
 
->> comando para quitar todos los archivos del "stage": git reset HEAD .
+```git add .``` -> Este comando nos permite agregar archivos al **stage**
 
->> comando para agregar un archivo específico al "stage": git add nombreArchivo.extension
 
->> comando para agregar un tipo de archivo específico al "stage": git add *.extension
 
-//--> Comando Git Commit
+``` git reset HEAD .``` -> comando para quitar todos los archivos del "stage"
+
+
+``` git add nombreArchivo.extension``` ->  comando para agregar un archivo específico al "stage"
+
+
+
+```git add *.extension``` ->  comando para agregar un tipo de archivo específico al "stage"
+
+
+### Comando Git Commit
+
 Nos permite hacer "commit" de los archivos que están en el "stage"
 
->> git commit -m "Mensaje que queremos dejar"
+```git commit -m "Mensaje que queremos dejar"```
 
->> comando para escribir el "commit" en multilínea: git commit
-	--> esto nos lleva a otra pantalla donde con la letra "A" agregamos el título del "commit"
-	--> si presionamos enter nos permite escribir la descripción del "commit"
-	--> una vez realizado esto, presionamos "Esc" y escribimos ":wq" (hacer write y quit)
-Luego de realizar el "commit" nos aparece esta información:
+
+``` git commit``` -> comando para escribir el "commit" en multilínea
+
+
+- esto nos lleva a otra pantalla donde con la letra "A" agregamos el título del "commit"
+
+- si presionamos enter nos permite escribir la descripción del "commit"
+
+- una vez realizado esto, presionamos **Esc** y escribimos **:wq** (hacer write y quit)
+
+- Luego de realizar el "commit" nos aparece esta información:
+```
 		[master 670d4fe] Agregamos diferentes archivos y carpetas al proyec
 		 3 files changed, 15 insertions(+), 17 deletions(-)
 		 create mode 100644 css/estilos.css
 		 create mode 100644 css/main.css
 		 rewrite index.html (69%)
+```
 
-//--> Comando Git Tag
+## Comando Git Tag
+
 Nos permite etiquetar los commits para no tener el código hash extenso y marcar versiones de un proyecto
 
->> comando para asignar etiqueta: git tag nombreEtiqueta
+``` git tag nombreEtiqueta ``` -> comando para asignar etiqueta
 
->> comando para conover etiqueta: git tag
+``` git tag ``` -> comando para conover etiqueta
 
->> comando para borrar la etiqueta: git tag -d nombreEtiqueta
+``` git tag -d nombreEtiqueta ``` -> comando para borrar la etiqueta
 
->> comando para agregar mensaje: git tag -a nombreEtiqueta -m mensaje
+``` git tag -a nombreEtiqueta -m mensaje``` -> comando para agregar mensaje
 
->> comando para ver la información oculta o mensajes de un tag: git show nombreEtiqueta
+```git show nombreEtiqueta ``` -> comando para ver la información oculta o mensajes de un tag
 
-Todo esto estamos agregando a nuestro último "commit" pero si quisiéramos modificar un "commit" anterior: git tag -a nombreEtiqueta hashCommit -m mensaje
 
-//--> Comando Git Log
+Todo esto estamos agregando a nuestro último **commit** pero si quisiéramos modificar un **commit** anterior: ```git tag -a nombreEtiqueta hashCommit -m mensaje```
+
+
+##  Git Log
+
+```
 		commit 670d4feeca8c180693a3f639c4adea36e535cbf8 (HEAD -> master, tag: v1.0.0)
 		Author: marcosgfrites <marcosgfrites@gmail.com>
 		Date:   Fri Sep 24 10:26:10 2021 -0300
+```
 
-		    Agregamos diferentes archivos y carpetas al proyec
 
->> comando para ver información de cada commit de manera reducida: git log --oneline
+- Agregamos diferentes archivos y carpetas al proyec
 
->> comando para ver la información del commit de manera reducida y gráfica (visualmente notable cuando trabajamos con muchas ramas): git log --oneline --decorate --all --graph
 
->> comando para asignar un alias a un comando dificil de recordar: git config --global alias.aliasNuevo "comandoAAsignarAliasSinGit"
+```  git log --oneline ``` -> comando para ver información de cada commit de manera reducida
 
-//--> Comando Git Diff
-Nos permite comparar los cambios presentes entre el commit actual y uno especifico: git diff hashCommit
 
->> comando para ver los cambios realizados sin agregarlos al stage: git diff
+```  git log --oneline --decorate --all --graph ``` -> comando para ver la información del commit de manera reducida y gráfica (visualmente notable cuando trabajamos con muchas ramas)
 
->> comando para ver los cambios realizados agregados al stage pero sin hacer commit aún: git diff --staged
 
->> comando para deshacer los cambios aún sin estar en el stage git checkout -- archivoModificado
+```git config --global alias.aliasNuevo "comandoAAsignarAliasSinGit" ``` ->  comando para asignar un alias a un comando dificil de recordar
+
+
+##  Git Diff
+
+
+Nos permite comparar los cambios presentes entre el commit actual y uno especifico: ```git diff hashCommit```
+
+
+``` git diff``` -> comando para ver los cambios realizados sin agregarlos al stage
+
+
+``` git diff --staged ```  -> comando para ver los cambios realizados agregados al stage pero sin hacer commit aún: 
+
+
+```   git checkout -- archivoModificado ``` -> comando para deshacer los cambios aún sin estar en el stage
 
 ---
 ---
 
 
-# Segunda clase
+# :book: Segunda clase
+
+---
 
 ## Conceptos generales
 
-¿Que es una version?
+¿ Que es una version ?
 
 Conjunto de nuevas caracteristicas y funcionalidades de un software
+
 
 
 ### ¿Como saber si instale bien git?
@@ -597,21 +652,23 @@ Conjunto de nuevas caracteristicas y funcionalidades de un software
 En git bash ``` git```
 
 
+
 ### ¿Que es un commit ?
 
-Cada vez que se guarda un trabajo, git crea un commit
+- Cada vez que se guarda un trabajo, git crea un commit
 
-Una confirmacion
+- Una confirmacion
 
-Vamos a tenr una rama principal **master/main** y cada **commit** va a ser un nuevo punto (en cada uno vemos un cambio)
+- Vamos a tener una rama principal **master/main** y cada **commit** va a ser un nuevo punto (en cada uno vemos un cambio)
+
 
 ### ¿ Que es una rama?
 
-Un conjunto de commits que se unene entre si y sufren diferentes cambios
+- Un conjunto de commits que se unene entre si y sufren diferentes cambios
 
-En cada ca,bio debe hacerse un commit
+- En cada cambio debe hacerse un commit
 
-Las ramas auxiliares
+- Las ramas auxiliares
 
 ---
 
@@ -640,7 +697,9 @@ Las ramas auxiliares
 
 - preparas los archivos que quieras subir al directoria, añadiendolos a tu area de preparacion
 
+
 ---
+
 
 ## Espacio de trabajo
 
@@ -648,15 +707,17 @@ Las ramas auxiliares
 
 - se ha modificado
 
+
 ---
 
 ### Carpetas ocultas en git
 
 vista -> elementos ocultos -> destildar ocultar archivo
 
+
 ---
 
-### area de preparacion
+### Area de preparacion
 
 - Se ha marcado un archivo modificado en su version actual para que vaya
 
@@ -666,18 +727,21 @@ vista -> elementos ocultos -> destildar ocultar archivo
 
 ---
 
+
 ### Area de repositorio
 
 - Repositorio = donde se alamcenan los datos actualizados e historicos de cambios que realicemos
 
+
 ---
 
-## Parsos realizados en clase 
+## Pasos realizados en clase 
 
 ```
 Paso 1: abrimos terminal GIT BASH
 Paso 2 : creamos carpeta TECNICATURA con MKDIR
 ```
+
 
 Luego de haber creado las carpetas con
 ```
@@ -689,7 +753,9 @@ entramos a la carpeta y ejecutamos
 git init
 ```
 
+
 Todos los archivos que comienzan con **.** son carpetas ocultas
+
 
 Comandos:
 
@@ -705,7 +771,9 @@ Ayuda
 Git --helo branch
 ```
 
+
 ---
+
 
 ### Pasar al estado de preparacion
 
@@ -714,6 +782,7 @@ Git --helo branch
 - Para guardar o aprobar (commit) ficheros en nuestro repositorio Git, primero
 
 -
+
 
 ---
 
