@@ -875,25 +875,88 @@ En espacio de trabajo ya tenemos un archivo para enviar
 
 ### :star: Commit
 
+- Una vez que nuestro archivo ya esta en nuestra área de preparación vamos a pasarlo a nuestra área de repositorio.
+
+- Se inicia los commit (carpeta .git)
+
+- Nos abrirá un editor de texto que se llama **Vim**
+
+#### Editor de texto(Vim)
 
 
-### :star: Editor de texto vim
+- Una vez que estamos en el editor de texto, nos va a permitir realizar los comentarios sobre las modificaciones que realicemos a nuestro proyecto.
 
-- nos permite realizar los comentarios sobre las modificaciones que realicemos a nuestro proyecto
+- En la pantalla del editor nos aparece un mensaje con # , eso quiere decir que todo lo que este  en esas líneas será ignorado, solo nos sirve como contexto de lo que estamos realizando.
 
-- si no escribimos algo no nos hara un commit
+- Sólo en la primera línea nos aparece sin #, en esa línea escribiremos nuestro primer commit
 
-- **ctrl+c** para guardar el texto
+- ```" mi primer commit con git"``` ( se inicia el proyecto)
+
+
+**IMPORTANTE: si no escribimos algo no habrá commit**
+
+- Comandos para guardar texto
+```
+Ctrl S
+```
+
+
+- Comando para salir del editor
+```
+Ctrl X
+```
+
+- Nos aparece el primer commit: ``` mi primer commit con git```( se inicia el proyecto)
+
+- Nos menciona la cantidad de archivos agregados + la cantidad de líneas utilizadas de código.
+
+- Nos menciona el nombre de los archivos creados.
+
+
 
 ---
 
 ### :star: Git log
 
-- veremos el primer commit
+- Con este comando veremos nuestro primer commit.
 
-- es la bitacora que muestra en pantalla todos los commits (todos los mensajes)
 
-- vemos el autor del commit
+- Es la bitacora que muestra en pantalla todos los commits (todos los mensajes)
+
+- Nos aparece el Autor del commit( nombre, apellido y el correo)
+
+- Fecha y hora del sistema y el mensaje que realizamos en nuestro editor de texto.
+
+- Cada commit tiene un **número identificador**  y que permite de manera ordenara realizar cada commit en mi proyecto, de manera que es imposible que se repitan.
+
+
+---
+
+### :star: Pasos para añadir archivos a nuestro repositorio y crear nuestros primer commit:
+
+**Paso 1**: Una vez que tenemos ya creadas las carpetas Tecnicatura Git y las subcarpetas Java y Python con sus respectivos archivos dentro.
+
+**Paso 2**: Tecleamos ```git status``` ->  veremos los archivos listos para ser enviados a nuestra área de preparación, los archivos deben figurar en color rojo.
+
+**Paso 3**: Tecleamos ```git add .``` para añadir lo que contiene ambas carpetas
+
+En caso de querer agregar un archivo especifico se debe teclear ```git add nombre_del_archivo```
+
+Para borrar el archivo del área de preparación ```git reset .```
+
+**Paso 4**: nuevamente tecleamos ```git status``` -> ahora nos aparecerán los archivos que fueron añadidos en color verde 
+
+**Paso 5** :  nuestros archivos están listos para ser commiteados 
+
+```git commit```  nos abre el editor de texto Vim
+
+En la primera línea escribimos ``` mi primer commit de git```
+
+Guardamos nuestro mensaje del editor con : **w**  o  **Ctrl S** y **Ctrl. x** para salir del editor .
+
+Otra opción es: ```git commit --m  "mi primer commit de git" ```y damos enter
+
+**Paso 6** : ```git log```   leemos nuestro commit 
 
 ---
 
