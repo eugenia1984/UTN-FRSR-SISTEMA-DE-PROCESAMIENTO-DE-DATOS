@@ -641,9 +641,13 @@ Nos permite comparar los cambios presentes entre el commit actual y uno especifi
 
 ## :star: Conceptos generales
 
+
+Al ser un sistema de control de versiones, permite ver el estado del proyecto, los cambios realizados en cada archivo, la persona que los realizó, así como poder restaurar una versión anterior.
+
+
 ¿ Que es una version ?
 
-Conjunto de nuevas caracteristicas y funcionalidades de un software
+Conjunto de nuevas caracteristicas y funcionalidades de un software disponibles para el usuario final. Como es Windows.
 
 
 
@@ -655,9 +659,9 @@ En git bash ``` git```
 
 ### :star:  ¿Que es un commit ?
 
-- Cada vez que se guarda un trabajo, git crea un commit
+- Cada vez que se guarda un trabajo, git crea un **commit** (una confirmacion)
 
-- Una confirmacion
+- Una confirmación es una anotación o registro de los cambios realizados en un momento dado. Si un archivo no ha cambiado de una commit a otro, Git usa el archivo almacenado anteriormente.
 
 - Vamos a tener una rama principal **master/main** y cada **commit** va a ser un nuevo punto (en cada uno vemos un cambio)
 
@@ -668,34 +672,45 @@ En git bash ``` git```
 
 - En cada cambio debe hacerse un commit
 
-- Las ramas auxiliares
+- Las ramas auxiliares son punteros ligeros y van a administrar una separación de la rama principal. Una vez que se realizaron los cambios en nuestra rama auxiliar, volvemos a incorporarnos en la rama principal o Master.
 
 ---
 
-- Git nos permite viajar en una linea del tiempo de nuestro proyecto 
+- Git nos permite viajar en una línea del tiempo de nuestro proyecto y realizar cambio en el.
 
-- Al trabajar en ramas auxiliares trabajamos en espacio temporal
+- Los commit crean vínculos a otras confirmaciones, formando un gráfico del historial del desarrollo, a esto llamaremos rama.
 
-- Protegemos el proyecto en caso que las modificaciones sean fallidas
+- Al trabajar en ramas auxiliares, estamos trabajando en un espacio temporal y esto me permite realizar cambios que no necesariamente se van a aplicar en nuestro proyecto.
+
+- Y también proteger nuestro proyecto en caso de que las modificaciones sean fallidas, evitamos cualquier daño a la rama principal.
 
 ---
 
 ### :star:  Estados de git
 
-**stage**
+Es un espacio en el que se puede realizar una acción
 
-**prepare**
+**stage** -> espacio de trabajo
 
-**carpeta .git**
+**preparacion** -> area de preparacion
+
+**carpeta .git** -> repositorio
+
+```
+carpeta  -> $ git add -> staging -> $ git commit -> repositorio
+proyecto                 area 
+```
 
 --
 
 
 ### :star:  Flujo de trabajo en git
 
-- editas uan serie de archivos en tu directorio de trabajo
+- Editas uan serie de archivos en tu directorio de trabajo
 
-- preparas los archivos que quieras subir al directoria, añadiendolos a tu area de preparacion
+- Preparas los archivos que quieras subir al directoria, añadiendolos a tu area de preparacion
+
+- Confirmas los cambios, lo que toma los archivos tal y como están en el área de preparación, y guarda esas instantáneas de forma permanente en tu directorio de Git
 
 
 ---
@@ -703,34 +718,49 @@ En git bash ``` git```
 
 ## :star:  Espacio de trabajo
 
-- todos los archivos que se pueden visualizar en carpeta
+- Se considera como espacio de trabajo, a todos los archivos que se pueden visualizar en carpeta.
 
-- se ha modificado
+- Se ha modificado el archivo pero todavía no lo se ha confirmado en tu base de datos local.
 
+- Git aun no se entera de la existencia de estos archivos, ya que aún no son parte de Git y tampoco es parte del espacio de trabajo.
+
+- git va a crear carpetas ocultas con (.)
 
 ---
 
 ### :star:  Carpetas ocultas en git
 
-vista -> elementos ocultos -> destildar ocultar archivo
+nos vamos a **Vista** -> tildamos **elementos ocultos**, y nos aparecerán las carpetas ocultas o en **propiedades de archivo**, destilamos la opción oculta, para que nos aparezca.
 
 
 ---
 
-### :star:  Area de preparacion
+### :star:  Area de preparacion ( STAGING AREA)
 
-- Se ha marcado un archivo modificado en su version actual para que vaya
+- Se ha marcado un archivo modificado en su version actual para que vayan en tu proxima confirmacion.
 
 - Aca es donde vamos a preparar los archivos que queremos utilizar o enviar al repositorio
 
-- Es un lugar temporal
+- El área de preparación se inicia, cuando se agrega con el comando: ```
+ git add ```
+
+-  Los archivos existentes que todavía no están siendo traqueados por git.
+
+- Acá es donde nosotros vamos a preparar todos los archivos que queremos realizar o mandar al repositorio.
+
+- Eso es un lugar temporal, como una memoria caché donde vamos a tener nuestros archivos.
+Por último,  lo pasamos al repositorio.
 
 ---
 
 
-### :star:  Area de repositorio
+### :star:  Area de repositorio (CARPETA GIT)
 
-- Repositorio = donde se alamcenan los datos actualizados e historicos de cambios que realicemos
+- Repositorio = donde se alamcenan los datos actualizados e historicos de cambios que realicemos en nuestro proyecto
+
+- Esta carpeta va a ser **.git**
+
+- Los datos del archivo están guardados en tu base de datos local.
 
 
 ---
@@ -738,37 +768,64 @@ vista -> elementos ocultos -> destildar ocultar archivo
 ## :star: Pasos realizados en clase 
 
 ```
-Paso 1: abrimos terminal GIT BASH
-Paso 2 : creamos carpeta TECNICATURA con MKDIR
+Paso 1 : Abrimos terminal **Git Bash**
+
+Paso 2: Creamos carpeta **mkdir tecnicatura_git**
+
+Paso 3: entrar a la carpeta **cd tecnicatura_git**
+
+Paso 4:Crear carpetas --mkdir java**  y luego **mkdir python**
+
+Paso 5: **git init** (creamos el repositorio)
+
+Paso 6: crear firma **git config --local user.name**
+
+Paso 7: **git config --local user.email**    
+
+Paso 8: revisar la firma con **git config –list**
+
+Paso 9 : salir con **q** o limpiar terminal o limpiar pantalla con **clear**
 ```
 
 
-Luego de haber creado las carpetas con
+Luego de haber creado las carpetas **java** y **python**, ingresar con el comando en nuestra unidad C desde la terminal de Git Bash y abrimos carpetas creadas.
+
 ```
-cd
+cd tecnicatura_git
+cd java
 ```
 entramos a la carpeta y ejecutamos 
 
-```
-git init
-```
+
+Una vez que ya iniciamos nuestro repositorio .git
+
+Con el comando  ```ls –la ``` (muestra los archivos y directorios ocultos en una carpeta).
+
+Nos aparecerán  todos los archivos ocultos
 
 
-Todos los archivos que comienzan con **.** son carpetas ocultas
+### Todos los archivos que comienzan con . son carpetas ocultas
 
+-> la carpeta .git va a estar oculta. Esto va a hacer que no genere ninguna molesta al usuario en el desarrollo del proyecto
 
 Comandos:
 
-Para limpiar pantalla
+Para limpiar terminal o pantalla:
 ```
-ctrl + l -> limpia pantalla
+ctrl + l 
 clear
 q
 ```
 
-Ayuda
+
+Para borrar archivo:
 ```
-Git --helo branch
+rmdir nombre_de_la_carpeta
+```
+
+Ayuda (manual de git):
+```
+git --help branch
 ```
 
 
@@ -779,12 +836,23 @@ Git --helo branch
 
 ``` git add <fichero>```
 
-- Para guardar o aprobar (commit) ficheros en nuestro repositorio Git, primero
+- Para guardar o aprobar (commit) ficheros en nuestro repositorio Git, primero se necesita añadirlos al área de preparación.
 
+- Los usuarios mueven los cambios desde el espacio  de trabajo al área de preparación, antes de aprobarlos/commit hacia el repositorio. 
 
+- El comando ```git add .``` permite registrar todos los cambios del directorio de trabajo.
+
+- Si queremos eliminar el archivo de nuestra zona de preparación antes de enviarlo al repositorio.
+```
+git  rm --cached "nombre del archivo"
+git reset
+```
+     
+En espacio de preparación ya tenemos un archivo para enviar a nuestro repositorio y ser commiteado.
 
 
 ---
+
 
 En espacio de trabajo ya tenemos un archivo para enviar
 
@@ -793,16 +861,15 @@ En espacio de trabajo ya tenemos un archivo para enviar
 
 ### :star: Git status
 
-- permite visualizar el estado de los cambios en el directorio de trabajo
+- Permite visualizar el estado de los cambios en el directorio de trabajo y en el área de preparación comparando con el repositorio. Muestra una lista de los archivos modificados o añadidos.
 
-- aun no tenemos un commit y nos avisa los archivos no traqueados en rojo
+- Aun no tenemos un commit y nos avisa los archivos no traqueados en rojo
 
-- ``` git add ```
+- Para pasar nuestros archivos desde el área de trabajo al área de preparación utilizaremos el comando ``` git add ``` y el **nombre del archivo** que vamos a mover o **.**
 
-- ```git status``` para ver el estado de nuestros archivos, si algo se modifico, si elimine algo, si agregue algo
+- Luego volvemos a ejecutar```git status``` para ver el estado de nuestros archivos, si algo se modifico, si elimine algo, si agregue algo
 
-
-- una vez traqueado el archivo esta en color **verde**, esta listo para commitear
+- Una vez traqueado el archivo esta en color **verde**, esta listo para commitear, para ser enviado al repositorio
 
 ---
 
