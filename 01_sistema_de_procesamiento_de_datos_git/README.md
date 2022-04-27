@@ -1,4 +1,4 @@
-# :book:  Primer clase : 12 abril - Sistema y Procesamiento de Datos: GIT
+# :book:  Primera clase : 12 abril - Sistema y Procesamiento de Datos: GIT
 
 ---
 
