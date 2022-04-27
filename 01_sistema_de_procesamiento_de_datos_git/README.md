@@ -1073,47 +1073,47 @@ Sólo con archivos modificados
 ### :star: Comando Git Checkout:
 
 
-•El comando  git checkout me permite borrar archivos modificados .
+•El comando  ```git checkout``` me permite borrar archivos modificados.
 
 •No me permite eliminar archivos nuevos.
 
-•Git checkout « nombre del archivo»
+•```git checkout <nombre del archivo>```
 
-•Git checkout –f « nos va a permitir borrar todos los últimos cambios realizados
+•```git checkout –f <mensaje>``` nos va a permitir borrar todos los últimos cambios realizados
 
 ---
 
-### Git RESTORE
+### :star: Git RESTORE
 
- git restore  --stage «nombre del archivo».
+``` git restore  --stage <nombre del archivo>```.
 
 •Vuelve el archivo al área de trabajo y poder modificarlos
 
 ---
 
-### Comando  Git Diff
+### :star: Comando  Git Diff
 
-Me permite saber qué agregué en el espacios de preparación.
+- Me permite saber qué agregué en el espacios de preparación.
 
-Nos muestra las modificaciones que hicimos en el archivo de nuestro repositorio.
+- Nos muestra las modificaciones que hicimos en el archivo de nuestro repositorio.
 
-Este comando nos permite saber que tipo de modificaciones hicimos.
+- Este comando nos permite saber que tipo de modificaciones hicimos.
 
 ---
 
-### Git Diff --Stat
+### :star: Git Diff --Stat
 
 
-Nos muestra de forma resumida las modificaciones que se han realizado en  los diferentes archivos en el que se quieren ver las modificaciones.
+- Nos muestra de forma resumida las modificaciones que se han realizado en  los diferentes archivos en el que se quieren ver las modificaciones.
 
-Git diff –-numstat ( solo para ver los números de líneas añadidas y eliminadas)
+```git diff –-numstat``` ( solo para ver los números de líneas añadidas y eliminadas)
 
 ---
 
 ## :star: Pasos a trabajar con los comandos vistos en la case 2 y 3 de Git:
 
 ```
-Paso 1: Creamos una subcarpeta en la carpeta TecnicaturaGit.
+Paso 1: Creamos una subcarpeta en la carpeta tecnicatura_git.
 
 Tecnicatura Git:
   Java
@@ -1121,9 +1121,8 @@ Tecnicatura Git:
   Readme
 
 En la terminal Git Bash:
-
-  cd Tecnicatura git
-   MKDIR Readme
+ > cd tecnicatura_git
+ > mkdir readme
 
 Paso 2: Abrimos cualquier editor de texto que tengan
 
@@ -1153,23 +1152,21 @@ Paso 9: desde la terminal de Git bash eliminaremos esas últimas modificaciones 
 
 Paso 10: Volvemos a nuestro editor de texto “escribimos nuevamente” y guardamos.
 
-Paso 11: Tecleamos git add .
+Paso 11: Tecleamos :
+>git add .
+> git restore --staged  nombre del archivo
 
-Git restore --staged  nombre del archivo
+->Vuelve mi archivo al área de trabajo
 
-  Vuelve mi archivo al área de trabajo
-
-Paso 12: Volvemos al editor y agregamos otras líneas, guardamos
-
-En nuestra terminal Git Bash tecleamos git Status
+Paso 12: Volvemos al editor y agregamos otras líneas, guardamos en nuestra terminal Git Bash tecleamos > git status
 
 Paso 13: Seguimos en nuestra terminal y tecleamos
 
-Git diff nombre del archivo en el que estamos  modificando
+> git diff 'nombre del archivo en el que estamos  modificando'
 
-Git diff --stat  me devuelve las últimas modificaciones pero en forma de resumen.
+> git diff --stat -> me devuelve las últimas modificaciones pero en forma de resumen.
 
-Git diff  --numstat solo devuelve número de inserciones y eliminaciones.
+> git diff  --numstat -> solo devuelve número de inserciones y eliminaciones.
 
 
 ---
@@ -1177,9 +1174,11 @@ Git diff  --numstat solo devuelve número de inserciones y eliminaciones.
 
 ## : star: Actividad Clase 3 ( 1ra. parte)
 
+
 ### Actividad n°1:
 
 Responder cuestionario de la  Clase 3 n° 1 en el aula del Campus
+
 
 ### Actividad n°2:
 
@@ -1191,10 +1190,13 @@ Responder cuestionario de la  Clase 3 n° 1 en el aula del Campus
 
 - Actividad Clase 3 (2da. parte)
 
-### Actividad n°1:
- Responder cuestionario n°2 de la Clase n°3 en el aula del Campus.
 
-### Actividad n°2: 
+### Actividad n°3:
+
+Responder cuestionario n°2 de la Clase n°3 en el aula del Campus.
+
+
+### Actividad n°4: 
 
 Añadir los archivos modificados aplicando los comando que vimos en la clase de hoy.
 
