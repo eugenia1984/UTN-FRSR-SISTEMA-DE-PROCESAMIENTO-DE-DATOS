@@ -836,6 +836,7 @@ git --help branch
 - El comando ```git add .``` permite registrar todos los cambios del directorio de trabajo.
 
 - Si queremos eliminar el archivo de nuestra zona de preparación antes de enviarlo al repositorio.
+
 ```
 git  rm --cached "nombre del archivo"
 git reset
@@ -913,7 +914,6 @@ Ctrl X
 
 - Con este comando veremos nuestro primer commit.
 
-
 - Es la bitacora que muestra en pantalla todos los commits (todos los mensajes)
 
 - Nos aparece el Autor del commit( nombre, apellido y el correo)
@@ -981,7 +981,7 @@ Vimos los comandos:
 
 ## :star: Modificaciones de Carpetas
 
-¿Qué pasa cuando modificamos algún archivo que ya habíamos commiteado?
+#### ¿Qué pasa cuando modificamos algún archivo que ya habíamos commiteado?
 
 - Si en nuestra área de trabajo hemos agregado algún archivo nuevo, al ejecutar **git status** ya estando dentro de nuestra carpeta Git, nos aparecerán en **rojo** esa modificaciones.
 
@@ -1013,7 +1013,7 @@ Otra opción es tecleamos Esc. y al final del editor nos aparecen : tecleamos wq
 
 
 
-### ¿Cómo guardar modificaciones en un Archivo?
+### :star: ¿Cómo guardar modificaciones en un Archivo?
 
 - Para guardar las modificaciones que hemos hecho en algún archivo.
 
@@ -1038,11 +1038,11 @@ Modificamos nuestro archivo agregando una línea de texto.
 
 ### Desde el editor de texto Vim:
 
- -en la primer línea, escribimos nuestro comentario para el commit
+-en la primer línea, escribimos nuestro comentario para el commit
 
- -luego guardamos con Control S 
+-luego guardamos con Control S 
 
- -salimos del editor con Control X
+-salimos del editor con Control X
 
 Creamos nuestra modificación en el repositorio
 
@@ -1055,13 +1055,13 @@ Git add . Agrega los archivos o modificaciones sólo  en la carpeta o subcarpeta
 
 Por ej: Si estamos ubicados en una subcarpeta y tecleamos Git add . No nos  agregara los archivos de otra subcarpeta donde no  estemos ubicados.
 
-Con Git Commit --m « escribimos comentario para el commit» luego nos aparece el commit, con la descripción de lo que hemos modificado.
+Con ```git commit -m « escribimos comentario para el commit» ``` luego nos aparece el commit, con la descripción de lo que hemos modificado.
 
-Con Git log  vemos la línea de commit que se va formando, para salir tecleamos la letra  q
+Con ```git log```  vemos la línea de commit que se va formando, para salir tecleamos la letra  q
 
-Cuando tenemos archivos modificados se puede utilizar el siguiente comando
+Cuando tenemos archivos modificados se puede utilizar el siguiente comando:
 
-Git commit –am «escribimos el comentario de nuestro commit»
+```git commit –am «escribimos el comentario de nuestro commit»```
 
 No se puede utilizar con archivos nuevos.
 
@@ -1070,7 +1070,7 @@ Sólo con archivos modificados
 
 ---
 
-### Comando Git Checkout:
+### :star: Comando Git Checkout:
 
 
 •El comando  git checkout me permite borrar archivos modificados .
