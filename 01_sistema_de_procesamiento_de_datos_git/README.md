@@ -645,7 +645,7 @@ Nos permite comparar los cambios presentes entre el commit actual y uno especifi
 Al ser un sistema de control de versiones, permite ver el estado del proyecto, los cambios realizados en cada archivo, la persona que los realizó, así como poder restaurar una versión anterior.
 
 
-¿ Que es una version ?
+### :star: ¿ Que es una version ?
 
 Conjunto de nuevas caracteristicas y funcionalidades de un software disponibles para el usuario final. Como es Windows.
 
@@ -716,7 +716,7 @@ proyecto                 area
 ---
 
 
-## :star:  Espacio de trabajo
+### :star:  Espacio de trabajo
 
 - Se considera como espacio de trabajo, a todos los archivos que se pueden visualizar en carpeta.
 
@@ -765,26 +765,18 @@ Por último,  lo pasamos al repositorio.
 
 ---
 
-## :star: Pasos realizados en clase 
+### :star: Pasos realizados en clase 
 
 ```
-Paso 1 : Abrimos terminal **Git Bash**
-
-Paso 2: Creamos carpeta **mkdir tecnicatura_git**
-
-Paso 3: entrar a la carpeta **cd tecnicatura_git**
-
-Paso 4:Crear carpetas --mkdir java**  y luego **mkdir python**
-
-Paso 5: **git init** (creamos el repositorio)
-
-Paso 6: crear firma **git config --local user.name**
-
-Paso 7: **git config --local user.email**    
-
-Paso 8: revisar la firma con **git config –list**
-
-Paso 9 : salir con **q** o limpiar terminal o limpiar pantalla con **clear**
+Paso 1 : Abrimos terminal git bash
+Paso 2: Creamos carpeta  > mkdir tecnicatura_git
+Paso 3: entrar a la carpeta > cd tecnicatura_git
+Paso 4:Crear carpetas > mkdir java  y luego >mkdir python
+Paso 5: >git init  (creamos el repositorio)
+Paso 6: crear firma > git config --local user.name
+Paso 7: > git config --local user.email    
+Paso 8: revisar la firma con > git config –list
+Paso 9 : salir con q o limpiar terminal o limpiar pantalla con clear
 ```
 
 
@@ -794,7 +786,8 @@ Luego de haber creado las carpetas **java** y **python**, ingresar con el comand
 cd tecnicatura_git
 cd java
 ```
-entramos a la carpeta y ejecutamos 
+
+Entramos a la carpeta y ejecutamos 
 
 
 Una vez que ya iniciamos nuestro repositorio .git
@@ -804,13 +797,13 @@ Con el comando  ```ls –la ``` (muestra los archivos y directorios ocultos en u
 Nos aparecerán  todos los archivos ocultos
 
 
-### Todos los archivos que comienzan con . son carpetas ocultas
+### :star: Todos los archivos que comienzan con . son carpetas ocultas
 
--> la carpeta .git va a estar oculta. Esto va a hacer que no genere ninguna molesta al usuario en el desarrollo del proyecto
+-> la carpeta **.git** va a estar oculta. Esto va a hacer que no genere ninguna molesta al usuario en el desarrollo del proyecto
 
-Comandos:
+### Comandos:
 
-Para limpiar terminal o pantalla:
+#### Para limpiar terminal o pantalla:
 ```
 ctrl + l 
 clear
@@ -818,12 +811,12 @@ q
 ```
 
 
-Para borrar archivo:
+#### Para borrar archivo:
 ```
 rmdir nombre_de_la_carpeta
 ```
 
-Ayuda (manual de git):
+#### Ayuda (manual de git):
 ```
 git --help branch
 ```
