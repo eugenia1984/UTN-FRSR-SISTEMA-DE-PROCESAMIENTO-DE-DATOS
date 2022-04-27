@@ -967,3 +967,46 @@ Crear el commit con los archivos agregados
 ---
 ---
 
+# :book:  Tercera clase : 26 abril - GIT
+
+---
+
+## :star: Los 3 estados de GIT
+
+Recordatorio de la clase anterior
+
+Vimos los comandos:
+
+```
+•Git Status
+•Git Add
+•Git Commit
+•Git Log
+```
+
+---
+
+## :star: Modificaciones de Carpetas
+
+¿Qué pasa cuando modificamos algún archivo que ya habíamos commiteado?
+
+- Si en nuestra área de trabajo hemos agregado algún archivo nuevo, al ejecutar **git status** ya estando dentro de nuestra carpeta Git, nos aparecerán en **rojo** esa modificaciones.
+
+- Con **git status** comprobamos el estado de nuestra carpeta Git
+
+- Una vez que nos aparecen las modificaciones ya podemos agregarlas a nuestra área de trabajo
+con **git sdd .** para mover **todos** los archivos o sino con  **git add «nombre del archivo»** para pasar sólo por nombre.
+
+- Los archivos ya están listos para ser commiteados.
+
+- **git commit – m «para escribir mensajes cortos»**. 
+
+- **git commit**  nos abre el editor que por defecto tenga su máquina, para escribir mensajes un poco más extenso.
+
+Al finalizar:
+```
+Ctrl. + S( guardamos mensaje de texto ) 
+Ctrl. + X(salimos del editor)
+```
+
+Otra opción es tecleamos Esc. y al final del editor nos aparecen : tecleamos wq!( nos guarda nuestro texto y salimos del editor Vim)
