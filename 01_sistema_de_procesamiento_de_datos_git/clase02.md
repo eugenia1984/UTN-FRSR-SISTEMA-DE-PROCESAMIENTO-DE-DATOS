@@ -66,7 +66,7 @@ carpeta  -> $ git add -> staging -> $ git commit -> repositorio
 proyecto                 area 
 ```
 
---
+---
 
 
 ### :star:  Flujo de trabajo en git
