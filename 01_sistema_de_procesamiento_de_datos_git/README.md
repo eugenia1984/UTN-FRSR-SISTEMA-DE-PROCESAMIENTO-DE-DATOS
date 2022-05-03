@@ -1397,5 +1397,33 @@ Luego commitearemos dichas modificaciones.
 
 ---
 
+## git log --oneline --all --graph --decorate
+
+
+```git log --oneline --all --graph --decorate  ``` ->  este comando nos permite ver de manera gráfica (dibujo)de las ramas que se van trabajando por separado y las modificaciones que vamos registrando.
+
+
+---
+
+## Actividad
+
+**Actividad n°1 (Clase n°4)**: Responder cuestionario para asistencia
+
+**Actividad n°2 (clase n° 4)**:
+
+- 1- Creamos carpeta desde Git Bash «Practica»
+
+- 2-Añadimos un archivo Readme y realizamos modificaciones en el.
+
+- 3- utilizamos comandos ```git checkout``` y ```git log```
+
+**Actividad n° 3(clase4)**:
+
+Creamos una rama nueva con el nombre «Práctica» 
+
+Aplicamos los comandos git log vistos en la clase
+
+Seguir los pasos que están en el aula del campus
+
 ---
 ---
