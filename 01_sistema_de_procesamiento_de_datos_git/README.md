@@ -1289,5 +1289,42 @@ acortados de los cambios que se realizaron en cada commit.
 
 - Podemos observar en la captura la ultima rama creada, mas los commit realizados en la Master
 
+
+```git log --oneline -n <x>``` -> con este comendo voy a poder ver la cantidad de commit que
+quiero leer
+
+- Con este comando voy a poder ver la cantidad de commit que quiero leer.
+
+
+```git log --pritty=format:<<>>``` ->  este comando permite agregar el formato que se desee,
+por ej: el nombre del autor, correo, fecha, etc.
+
+- Ejemplo: ```git log --pretty=format:"El autor del commit %h fue %an" ```
+
+
+---
+
+El comando Git log es nuestra línea de tiempo.
+
+Esa línea la llamaremos MASTER y siempre se actualizará hacia arriba.
+
+---
+
+## :star: RAMAS
+
+Dentro de mi rama MASTER puedo crear ramas nuevas o auxiliares.
+
+Esto nos indicará que vamos a tener dos líneas de tiempo con diferentes tiempos y commit
+
+```
+                  --- X ----- X Nueva rama 1
+                  |
+Master  X ---- X ----- X ------ X ------ X
+o Main                     |
+                           ---- X ---- X Nueva rama 2
+```
+
+
+
 ---
 ---
