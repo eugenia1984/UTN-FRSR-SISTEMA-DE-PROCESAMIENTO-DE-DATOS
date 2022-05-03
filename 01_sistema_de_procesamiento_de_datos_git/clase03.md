@@ -150,62 +150,67 @@ Sólo con archivos modificados
 
 ## :star: Pasos a trabajar con los comandos vistos en la case 2 y 3 de Git:
 
-```
+
 Paso 1: Creamos una subcarpeta en la carpeta tecnicatura_git.
 
+```
 Tecnicatura Git:
   Java
   Python
   Readme
+```
 
 En la terminal Git Bash:
+```
  > cd tecnicatura_git
  > mkdir readme
+```
 
 Paso 2: Abrimos cualquier editor de texto que tengan
 
 - Creamos un documento, escribimos unas líneas y lo guardamos en la subcarpeta Readme.
 
-Paso 3: En la terminal de Bash  tecleamos > git status
+Paso 3: En la terminal de Bash  tecleamos ```> git status```
 
-Paso 4: Agregamos archivos a nuestra área de preparación > git add .
+Paso 4: Agregamos archivos a nuestra área de preparación ```> git add .```
 
-Paso 5:  commiteamos el archivo que ya está en nuestra área de preparación > git commit – m “escribimos nuestra primara línea del documento”, damos enter.
+Paso 5:  commiteamos el archivo que ya está en nuestra área de preparación ```> git commit – m “escribimos nuestra primara línea del documento”```, damos enter.
 
 Paso 6: volvemos a nuestro editor de texto y escribimos una 2da. línea y guardamos. (Importante que no se olviden).
 
-Paso 7: En la terminal de Git Bash tecleamos > git status
+Paso 7: En la terminal de Git Bash tecleamos ```> git status```
 
 Paso 8: pasamos modificaciones a nuestra área de preparación y commiteados al mismo tiempo (éste comando sólo se puede utilizar sobre carpetas que ya existen no nuevas).
 
-> git commit –am “ actualizamos notas”
+```> git commit –am “ actualizamos notas”```
 
 Volvemos al editor de texto y agregamos 3 líneas más
 
 Paso 9: desde la terminal de Git bash eliminaremos esas últimas modificaciones en nuestro editor de texto.
 
->   git checkout  nombre del archivo
+```>   git checkout  nombre del archivo```
 
-> git checkout  -f si hemos modificado más de un archivo borrará todas las modificaciones realizadas.
+```> git checkout  -f ```si hemos modificado más de un archivo borrará todas las modificaciones realizadas.
 
 Paso 10: Volvemos a nuestro editor de texto “escribimos nuevamente” y guardamos.
 
 Paso 11: Tecleamos :
->git add .
+```
+> git add .
 > git restore --staged  nombre del archivo
+```
 
 ->Vuelve mi archivo al área de trabajo
 
-Paso 12: Volvemos al editor y agregamos otras líneas, guardamos en nuestra terminal Git Bash tecleamos > git status
+Paso 12: Volvemos al editor y agregamos otras líneas, guardamos en nuestra terminal Git Bash tecleamos ```> git status```
 
 Paso 13: Seguimos en nuestra terminal y tecleamos
 
+```
 > git diff 'nombre del archivo en el que estamos  modificando'
-
 > git diff --stat -> me devuelve las últimas modificaciones pero en forma de resumen.
-
 > git diff  --numstat -> solo devuelve número de inserciones y eliminaciones.
-
+```
 
 ---
 
@@ -237,3 +242,6 @@ Responder cuestionario n°2 de la Clase n°3 en el aula del Campus.
 ### Actividad n°4: 
 
 Añadir los archivos modificados aplicando los comando que vimos en la clase de hoy.
+
+---
+---
