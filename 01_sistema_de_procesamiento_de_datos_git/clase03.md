@@ -1,4 +1,4 @@
-# :book:  Tercer clase : 26 abril - GIT
+# :book:  Tercer clase : 26 Abril - GIT
 
 ---
 
