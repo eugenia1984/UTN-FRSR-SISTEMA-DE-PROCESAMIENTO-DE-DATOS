@@ -1325,6 +1325,77 @@ o Main                     |
 ```
 
 
+Cada línea tiene su independencia y nuevas características, esto nos permite solucionar problemas que pueden surgir en la Master ý así evitar dañar nuestro proyecto.
+
+```
+MASTER X ----- X ------ X ------ X ------ X
+         |
+         ---- X ---- X DEVELOP
+```
+
+
+Las Ramas nos permiten fusionar más adelante y se pueden generar más líneas 
+
+
+```
+MASTER X ----- X ------ X ------ X ------ X
+         |
+         ---- X ---- X ---- X DEVELOP
+                 |
+                 ---- X ---- FEATURE1
+```
+
+---
+
+Cada línea del tiempo se llamarán ramas como si fuera un árbol.
+
+-  ```git log``` nos dará la ubicación de nuestra rama Master
+
+- ```git log --online``` nos indicará que estamos en el Master
+
+- ```git log –checkout <el numero de ID del commit>``` nos dará la ubicación especifica de nuestro commit.
+
+-  Si queremos volver a la rama Master ejecutamos el comando ```git checkout master```
+
+
+---
+
+## :star: RAMA NUEVA
+
+
+Para Crear una Rama Nueva utilizaremos el siguiente comando -> ```git checkout -b <nombre de la rama>```
+
+
+En el momento de crear mi **rama auxiliar** o **nueva rama** mi puntero se va a posicionar en mi nueva rama de mi proyecto.
+
+Una vez creada la rama, añadiremos las modificaciones a nuestro proyecto, cuando ya estén listas nuestras modificaciones.
+
+Digitaremos ```git status``` y veremos entonces cada una de las modificaciones que hemos
+realizado.
+
+Luego commitearemos dichas modificaciones.
+
+```git add . ```(agregamos archivo modificado)
+
+```git checkout -b <nombre de la nueva rama>```
+
+```git branch``` ( veremos tanto la rama Master como nuestra rama Creada )
+
+---
+
+## git brach
+
+
+```git branch``` ->  Eeste comando nos permite ver todas las ramas que tenemos tanto nuestra rama Master como todas las creadas.
+
+
+---
+
+## git log --oneline --all --graph
+
+```git log --oneline --all --graph ``` -> este comando nos va a permitir ver todas las ramas en línea y con los commit (puntos)en cada rama
+
+---
 
 ---
 ---
