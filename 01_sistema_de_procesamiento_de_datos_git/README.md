@@ -1247,7 +1247,47 @@ Con el comando ``` git log``` se ven los commits hasta el momento
 ---
 
 
+- Para utilizar el comando Git Checkout y el nª hash # de cada commit seleccionaremos, cualquier commit que hemos realizado
 
+- Una vez seleccionado lo copiaremos
+
+- Teclearemos el comando ```git checkout <mas el numero hash# de nuestro commit>``` y nos aparecerá una leyenda diciendo que nuestro puntero o posicionamiento cambia del ultimo commit al commit que le hemos indicado con el nª hash#
+
+- Nos indica que nuestro puntero ya esta ubicado en en el numero del commit que seleccionamos y con la descripción del commit que realizamos
+
+- volvemos a teclear ```git log --oneline``` y nos aparecerán los commit sólo hasta el commit
+que seleccionamos, los demás commit mas nuevos no aparecerán. Volvemos a seleccionar un commit pero esta vez sólo los primeros 7 dígitos, copiamos y volvemos a ejecutar
+
+- Tecleamos``` git log``` y nos aparecerán sólo hasta el commit que hemos seleccionado, los más recientes no aparecerán.
+
+- El puntero se posicionará en el commit que hemos seleccionado
+
+- Para volver al último commit que realicé tecleamos ```git ckeckout master```
+
+- y el puntero nos vuelve a posicionar en neutro último commit
+
+
+
+---
+
+## :star: git log --raw
+
+- Este comando nos permite saber cuales fueron los cambios que pasaron en un commit. 
+
+- Nos mostrará también que tipo de acciones hicimos si modificamos un archivo, lo borramos o añadimos algo nuevo. Además nos muestra el código de seguridad de nuestros commit.
+
+
+---
+
+## :star: git log
+
+```git log --oneline``` -> este Comando nos permite ver en una hilera un resumen de los hash #
+acortados de los cambios que se realizaron en cada commit.
+
+
+- Nos aparecerá la última rama trabajada porque se respeta siempre el tiempo.
+
+- Podemos observar en la captura la ultima rama creada, mas los commit realizados en la Master
 
 ---
 ---
