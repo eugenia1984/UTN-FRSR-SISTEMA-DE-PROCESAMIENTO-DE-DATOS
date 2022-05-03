@@ -108,7 +108,7 @@ Sólo con archivos modificados
 
 ---
 
-### :star: Comando Git Checkout:
+### :star: Comando : git checkout
 
 
 •El comando  ```git checkout``` me permite borrar archivos modificados.
@@ -129,7 +129,7 @@ Sólo con archivos modificados
 
 ---
 
-### :star: Comando  Git Diff
+### :star: Comando  : git diff
 
 - Me permite saber qué agregué en el espacios de preparación.
 
@@ -139,7 +139,7 @@ Sólo con archivos modificados
 
 ---
 
-### :star: Git Diff --Stat
+### :star: git fiff --stat
 
 
 - Nos muestra de forma resumida las modificaciones que se han realizado en  los diferentes archivos en el que se quieren ver las modificaciones.
@@ -215,7 +215,7 @@ Paso 13: Seguimos en nuestra terminal y tecleamos
 ---
 
 
-## : star: Actividad Clase 3 ( 1ra. parte)
+## :star: Actividad Clase 3 ( 1ra. parte)
 
 
 ### Actividad n°1:
