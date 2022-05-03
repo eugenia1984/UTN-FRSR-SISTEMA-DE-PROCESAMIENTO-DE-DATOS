@@ -1206,6 +1206,46 @@ Añadir los archivos modificados aplicando los comando que vimos en la clase de 
 
 # :book:  Cuarta clase : 03 Mayo - GIT
 
+---
+
+-> [Enlace Documentación Comando Git Log](https://git-scm.com/docs/git-log)
+
+
+---
+
+## Comandos GIT ya vistos:
+
+```
+git commit –am « nota de nuestro cambio»
+git checkout «nombre de archivo»
+git checkout –f
+git restore --staged «nombre de archivo»
+git diff
+git diff --stat
+git diff --numstat
+```
+
+-> Cada commit que realizamos irá formando una línea del tiempo
+en nuestro proyecto
+
+``` MAIN/MASTER X------X-----X-----X ```
+
+---
+
+## ¿Cómo viajamos en el tiempo para ver los cambios que realizamos en nuestro proyecto?
+
+Cada commit tiene un número de id o #
+
+Otras funciones de **git checkout** -> Con ``` git checkout «más el número de identificación»```(se pueden copiar sólo los primeros 7 dígitos) podremos ver entonces a como estaba nuestro proyecto sin las modificaciones nuevas
+
+Para volver al presente donde esta mi último commit ejecutamos -> ``` git checkout master```
+
+---
+
+Con el comando ``` git log``` se ven los commits hasta el momento
+
+---
+
 
 
 
