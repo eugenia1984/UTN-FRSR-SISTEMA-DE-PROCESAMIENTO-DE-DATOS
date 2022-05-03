@@ -473,6 +473,7 @@ Para hacer una configuracion global:
 
 
 ---
+---
 
 ## :star: Flujo de Uso de GIT: 
 
@@ -960,7 +961,7 @@ Crear el commit con los archivos agregados
 ---
 ---
 
-# :book:  Tercera clase : 26 abril - GIT
+# :book:  Tercer clase : 26 abril - GIT
 
 ---
 
@@ -1203,3 +1204,10 @@ Añadir los archivos modificados aplicando los comando que vimos en la clase de 
 ---
 ---
 
+# :book:  Cuarta clase : 03 Mayo - GIT
+
+
+
+
+---
+---
