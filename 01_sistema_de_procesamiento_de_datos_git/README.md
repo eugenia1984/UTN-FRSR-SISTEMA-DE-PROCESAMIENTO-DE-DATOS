@@ -1,4 +1,4 @@
-Se guarda la teroia por cada clase vista:
+Se guarda la teoría por cada clase vista:
 
 :star: [1ra clase : 12 de Abril - Sistema de Procesamiento de Datos y GIT](https://github.com/eugenia1984/UTN-FRSR-SISTEMA-DE-PROCESAMIENTO-DE-DATOS/blob/main/01_sistema_de_procesamiento_de_datos_git/clase01.md)
 
