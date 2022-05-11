@@ -252,9 +252,55 @@ Veremos en nuestra terminal de Git Bach ejecutando el comando
 
 ### :star: Git branch
 
-Que nuestra rama que elegimos ya no utilizar ya no me aparece
+Que nuestra rama que elegimos ya no utilizar ya no me aparece.
+
+Si ejecutamos  ```>git log --oneline --all --graph --decorate```  podremos ver que nuestra rama imagen a desaparecido.
 
 ---
 ---
 
+## :star:  Actividad n°1 :
+
+Responder cuestionario en Aula del Campus: (Es sólo para asistencia de 19 a 23 hs.)
+
+## :star: Actividad n° 2 : Ejecutar comandos vistos durante la clase
+
+Actividad clase n° 5 Git :
+
+Realiza  los siguientes pasos de la actividad n°2:
+
+ ```
+Paso 1: Creamos una nueva rama llamada IMAGEN: > git checkout –b “imagen”
+
+Paso 2: Añadiremos dos imágenes a nuestro archivo desde nuestra área de trabajo
+
+Paso 3: Ejecutamos: > git status, veremos los nuevos archivos para añadir
+
+Paso 4: Tecleamos: > git Add . Añadimos los nuevos archivos a nuestra área de preparación > git commit –m “comentario de nuestro commit”
+
+Paso 5: para ver las ramas que tengo: > git branch
+
+Paso 6: Para visualizar los commit y las ramas creadas: > git log  --oneline --all --graph --decorate
+
+Paso 7: debemos estar ubicados en nuestra rama Master. Para ubicarnos en la rama master con: >  git switch Master
+
+Paso 8: para la fusión de las ramas: > git merge “nombre de la rama que quiero fusionar”
+
+Paso 9: digitamos : > git log --oneline --all --graph --decarate
+
+Paso 10:
+
+Git  branch -D “nombre de la rama que vamos a eliminar”
+
+Paso 11: 
+Creamos otra rama y usamos el mismo archivo readme.txt, esto generará un conflicto
+
+Paso 12: >git merge --abort  para eliminar la fusión)
+
+Paso13: > git branch y podremos ver las ramas que nos quedan
+
+ 
+
+---
+---
 
