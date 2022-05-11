@@ -100,9 +100,30 @@ NEW_FEATURE       -------------------------
 
 ## :star: ¿Qué es Git Merge?
 
-Git Merge es un comando que se usa para fusionar ramas independientes en una sola rama en Git.
+**Git Merge** es un comando que se usa para fusionar ramas independientes en una sola rama en Git.
 
 Cuando se usa el comando de fusión en Git, solo se actualiza la rama actual para reflejar la fusión y la rama de destino no se ve afectada. Esto significa que, a menudo, Git Merge se usa junto con git checkout para seleccionar la rama actual y git branch para eliminar una rama fuente desactualizada.
+
+
+-> Git Merge es un comando para fusionar ramas en Git
+
+### ¿Cómo funciona Git Merge?:
+
+El uso principal del comando Git Merge es fusionar dos ramas. También se utiliza para fusionar cadenas de confirmación en un historial unificado.
+
+Para comprender cómo funciona el comando Git Merge, tomaremos un ejemplo de combinación de ramas. En la siguiente ilustración, Git Merge tomará dos ramas y encontrará una confirmación de base común entre ellas. Cuando Git encuentra una confirmación de base común, crea una nueva confirmación de combinación y combina los cambios en la secuencia de cada confirmación de combinación. Aquí, tenemos 2 sucursales: sucursal principal y sucursal de etapa. Ahora, fusionaremos la rama del escenario con la rama principal.
+
+
+### Cómo fusionar las ramas que hemos creado?
+
+- Utilizarás el comando ```git merge```
+
+- Indicarás haciendo ```git merge <nombre de la rama>``` a la rama cuál querrás fusionar con master.
+
+
+**«Siempre tener en cuenta que cuando se mezclan ramas se debe tener cuidado con los archivos que se han tocado. Cuando no se tocan los mismos archivos no hay inconvenientes, pero cuando se tocan los mismos archivos git no sabrá cuál archivo agregar y habrá un conflicto.»**
+
+
 ---
 ---
 
