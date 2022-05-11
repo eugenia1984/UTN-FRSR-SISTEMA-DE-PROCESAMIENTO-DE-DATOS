@@ -123,6 +123,136 @@ Para comprender cómo funciona el comando Git Merge, tomaremos un ejemplo de com
 
 **«Siempre tener en cuenta que cuando se mezclan ramas se debe tener cuidado con los archivos que se han tocado. Cuando no se tocan los mismos archivos no hay inconvenientes, pero cuando se tocan los mismos archivos git no sabrá cuál archivo agregar y habrá un conflicto.»**
 
+### ¿Qué pasa si sólo aplicamos el siguiente comando?:
+
+```> git merge <el nombre de la rama que quiero fusionar>``` nos Abrirá un editor de texto ( Vim, Atomo, Nano, VSC, etc.)
+
+-> ```«colocaremos la mezcla de la rama master con la nueva rama»```
+
+-> Salimos del editor con ```Ctrl + S``` y ```Ctrl + X``` ó  con ```Esc : WQ!```
+
+-> Cerramos el editor de texto y nos actualiza el commit con la fusión de las 2 ramas.
+
+
+
+Tecleamos:
+
+``` > git log  --oneline  --all  --graph --decorate```
+
+Nos aparecerá   el commit con la fusión con el fin de la rama e integrándose  a la Rama Master.
+
+---
+
+## :star: Para eliminar mi fusión de ramas:
+
+En caso que se produzca un conflicto en mis ramas, con el siguiente comando hacemos que cada rama vuelva a su posición original.
+
+```> git merge --abort```
+
+
+
+### ¿Cómo eliminar una rama?
+
+-> Estando ubicados en la rama Master, borramos la rama auxiliar que habíamos creado.
+
+-> ```> git branch -D <nombre de la rama>``` 
+
+(No se puede eliminar una rama en la cual estás ubicado)
+
+(La opción -D siempre debe ser mayúscula)
+
+-> Se eliminará la rama creada
+
+-> Tecleamos: ``` > git log --oneline --all --graph --decorate```
+
+->Nos aparecerá la rama Master, pero desaparece la que habíamos creado.
+
+### ¿Cómo resolver conflictos en el merge de ramas?
+
+Cuando realizas un git merge y te aparece un conflicto deberás proceder de la siguiente manera:
+
+- Abrir tu editor de texto, allí git agregará estás 3 líneas
+
+```
+1.<<<<< HEAD (Current Change)(esta te muestra en que rama estás ubicado y los cambios actuales)
+2.===== (esta para dividir los cambios)
+
+3. >>>>> nombre-rama (Incoming Change) (esta te muestra la rama a la cual le estás haciendo el merge y sus cambios)
+```
+
+- Analizar cuáles cambios deben ser tomados de estas ramas y eliminar los que no serán utilizados.
+
+- Borrar las líneas que git agregó y dejar en el HEAD todos los cambios que serán utilizados
+
+
+### ¿Qué pasa si en el momento de hacer una fusión de ramas se me genera un conflicto?
+
+
+Si abrimos el editor Visual Studio Code el documento Readme sale marcado y dividido en dos colores. Con:
+
+```
+<<<<< HEAD 
+===== 
+
+>>>>>
+```
+
+«Lo que aparece en las primeras líneas de nuestro documento Readme.txt marcados en verde son los cambios que realice en mi Master y las líneas que aparecen marcadas en azul y al final son los cambios que realice en mi otra rama.»
+
+
+Cuando hemos realizado modificaciones en el mismo archivo GIT que hay un conflicto en el archivo que se han hecho modificaciones en ambas ramas.
+
+Para solucionar este conflicto se realizara manualmente en nuestro documento y eliminamos todo  que no vamos a utilizar. Mucho cuidado de no eliminar comandos importantes en nuestro códigos
+
+
+En nuestra ventana de comandos ejecutaremos ```> git status```
+
+Nos mostrará las modificaciones  realizadas en nuestro documento, nos dirá también que hay ramas para ser fusionadas , cambios para ser commiteados  y nos dará la opción para deshacer la mezcla de ramas.
+
+Añadiremos los archivos modificados con ```> git add . <nombre del archivo>```
+
+uego commitearemos la documentación  corregida y que ya añadimos para poder logras la fusión de ambas ramas. Utilizaremos  ```>git commit -m <comentario de la modificación que realizamos> ```
+
+
+Nos mostrará  que la fusión ya se realizó y ya no figurará **Master/Merging** en nuestra repositorio, y también el número de hash del commit donde estaba el conflicto y volverá a decir sólo  **Master**
+
+Ejecutamos ```>git log --oneline  --all --graph –decorate```
+
+Veremos la fusión de nuestras ramas
+
+Si después de hacer varias modificaciones a 1 archivo de una 2da. rama, le hago commit inclusive, y me arrepiento y quiero revertirlo y devolver ese puro archivo a como está en la rama master, como puedo hacerlo ?
+
+```> git log``` para ver el commit al que deseas volver, debes copiar el n° de hash del commit
+
+```>git reset <n° hash>``` según el commit que quieras volver
+
+```>git reset (n° del Hash)``` y con eso volverás al commit que seleccionaste. Tal como está este ejemplo seguirás teniendo los cambios en los archivos.
+
+Los archivos volverán a un estado anterior. Volveremos a un estado anterior donde no habíamos  realizado nuestros commit.
+
+Si trabajaron varias ramas en un mismo archivo se pueden generar conflictos si trabajan las mismas líneas de códigos.
+
+```> git merge «nombre de la rama a eliminar»``` para abortar el merge  si no se pude solucionar el conflicto
+
+```>git merge --abort```
+
+```>git add``` añadiremos las modificaciones hechas
+
+```Git commit``` commitearemos lo que añadimos a nuestra área  de preparación con -> ```> git commit –m "comentario"```
+
+```>git branch``` Nos aparecerán  las ramas
+
+```>git branch -d``` eliminaremos las ramas que ya no utilicemos
+
+Con el comando ```>git branch```  podemos ver que ramas tenemos y con el comando ```>git branch  -D <nombre de la rama que eliminaremos>``` elimina la rama que ya no utilicemos.
+
+Importante: Recordar estar siempre ubicados en nuestra rama (Master o Main)
+
+Veremos en nuestra terminal de Git Bach ejecutando el comando
+
+### :star: Git branch
+
+Que nuestra rama que elegimos ya no utilizar ya no me aparece
 
 ---
 ---
