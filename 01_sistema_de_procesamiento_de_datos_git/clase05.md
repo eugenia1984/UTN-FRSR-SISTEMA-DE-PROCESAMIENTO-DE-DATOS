@@ -269,7 +269,7 @@ Actividad clase n° 5 Git :
 
 Realiza  los siguientes pasos de la actividad n°2:
 
- ```
+```
 Paso 1: Creamos una nueva rama llamada IMAGEN: > git checkout –b “imagen”
 
 Paso 2: Añadiremos dos imágenes a nuestro archivo desde nuestra área de trabajo
@@ -298,7 +298,7 @@ Creamos otra rama y usamos el mismo archivo readme.txt, esto generará un confli
 Paso 12: >git merge --abort  para eliminar la fusión)
 
 Paso13: > git branch y podremos ver las ramas que nos quedan
-
+```
  
 
 ---
