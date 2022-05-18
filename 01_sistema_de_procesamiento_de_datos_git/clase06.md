@@ -415,7 +415,7 @@ Si ejecutamos ```git log --oneline``` nos figurarán las dos versiones realizada
 
 También puedes ejecutar ```git show  (mas la versión elegida )``` para ver los detalles que te permite el comando mencionado.
 
-Con git tag –a «nombre de la version» –m «mensaje de la version» nos permite utilizar luego git show
+Con ```git tag –a «nombre de la version» –m «mensaje de la version»``` nos permite utilizar luego git show
 
 
 ---
