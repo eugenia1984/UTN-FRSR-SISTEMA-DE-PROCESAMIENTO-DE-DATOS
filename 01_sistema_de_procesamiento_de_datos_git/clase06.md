@@ -94,17 +94,20 @@ x ---- x ----- x ------ x ------ x ------ x master
 
 Siempre en cada proyecto habrá líderes, ellos serán los únicos que estarán a cargo de modificar la Master, los demás integrantes no estarán autorizados.
 
+
 ### Creación de Ramas:
 
 Desde las ramas de cada desarrollador, se sacarán ramas para trabajar en la rama que le queda a cada uno.
 
 Una vez que se cumple el trabajo en cada rama se debe volver a la rama Master.
 
+
 ### Cuando ejecutamos Merge:
 
 Cuando hablamos de utilizar el comando Merge, hablamos de la **integración de las ramas auxiliares** (que se han estado trabajando por separado) **a nuestra rama Master**.
 
 Puede que hemos en la creación de esas ramas auxiliares hemos estado tocando y modificando las mismas ramas y esto puede generar conflictos.
+
 
 ### Cambio sólo realizados en nuestras ramas auxiliares:
 
@@ -117,7 +120,9 @@ Puede que hemos en la creación de esas ramas auxiliares hemos estado tocando y 
 ---
 ---
 
+
 ## :star: Comandos git
+
 
 ### Nuestra carpeta .git ignore
 
@@ -126,6 +131,7 @@ Puede que hemos en la creación de esas ramas auxiliares hemos estado tocando y 
 Es una carpeta creada en del directorio de trabajo en el momento de ejecutar ```git init```. Esta carpeta contiene reglas sobre qué archivos y/o carpetas deben ser ignorados por git.
 
 Cualquier archivo que ignoremos no aparecerá en la salida de un git status y además será ignorado cuando utilicemos un comando``` git add```. Esto no quiere decir que los archivos ignorados sean eliminados de tu equipo local, sino que permanecerán ahí pero nunca se subirán al repositorio. 
+
 
 #### Practica:
 
@@ -151,6 +157,7 @@ Para ignorar archivos utilizaremos el comando: ```git ignore```
 
 Este comando nos permite mover los archivos que no utilicemos  en nuestras ramas  de Git
 
+
 ### Para cambiar nuestro Editor de Texto:
 
 El editor de texto que trae por defecto Git, puedes configurar el editor de texto favorito, con la siguiendo  tabla:
@@ -165,170 +172,115 @@ El comando ```--globalle``` dice a Git que use la configuración para cada proye
 | Editor | Comando de configuración |
 | ------ | ------------------------ |
 | Átomo | ```$ git config --global core.editor "atom --wait"``` |
-
-nano
-
-$ git config --global core.editor "nano -w"
-
-Arreglista de texto
-
-$ git config --global core.editor "edit -w"
-
-Texto sublime (Mac)
-
-$ git config --global core.editor "subl -n -w"
-
-Sublime Text (Win, instalación de 32 bits)
-
-$ git config --global core.editor "'c:/program files (x86)/sublime text 3/sublime_text.exe' -w"
-
-Sublime Text (Windows, instalación de 64 bits)
-
-$ git config --global core.editor "'c:/program files/sublime text 3/sublime_text.exe' -w"
-
-Bloc de notas ++ (ganar)
-
-$ git config --global core.editor "'c:/program files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
-
-Kate (Linux)
-
-$ git config --global core.editor "kate"
-
-Gedit (Linux)
-
-$ git config --global core.editor "gedit -s -w"
-
-Código VS
-
-$ git config --global core.editor "code --wait"
-
-emacs
-
-$ git config --global core.editor "emacs"
-
-empuje
-
-$ git config --global core.editor "vim"
+| nano | ```$ git config --global core.editor "nano -w"``` |
+| Arreglista de texto | ```$ git config --global core.editor "edit -w"``` |
+| Texto sublime (Mac) | ```$ git config --global core.editor "subl -n -w"``` |
+| Sublime Text (Win, instalación de 32 bits) | ```$ git config --global core.editor "'c:/program files (x86)/sublime text 3/sublime_text.exe' -w"``` |
+| Sublime Text (Windows, instalación de 64 bits) | ```$ git config --global core.editor "'c:/program files/sublime text 3/sublime_text.exe' -w"``` |
+| Bloc de notas ++ (ganar) | ```$ git config --global core.editor "'c:/program files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"``` |
+| Kate (Linux) | ```$ git config --global core.editor "kate"``` |
+| Gedit (Linux) | ```$ git config --global core.editor "gedit -s -w"``` |
+| Código VS |```$ git config --global core.editor "code --wait"``` |
+| emacs | ```$ git config --global core.editor "emacs"``` |
+| empuje | ```$ git config --global core.editor "vim"``` |
 
 
-Los cuatro comandos que acabamos de ejecutar arriba solo deben ejecutarse una vez: el comando  --globalle dice a Git que use la configuración para cada proyecto, en su cuenta de usuario, en esta computadora.
+Los cuatro comandos que acabamos de ejecutar arriba solo deben ejecutarse una vez: el comando  ```--globalle ```dice a Git que use la configuración para cada proyecto, en su cuenta de usuario, en esta computadora.
 
-Puede comprobar su configuración en cualquier momento:
-
- git config --list
+-> Puede comprobar su configuración en cualquier momento: ``` git config --list```
 
 Puedes cambiar tu configuración tantas veces como quieras: solo usa los mismos comandos para elegir otro editor o actualizar tu dirección de correo electrónico.
 
 Nos configura el editor de texto que queremos utilizar.
 
 
-Para cambiar de una rama a otra:
+## :star: Para cambiar de una rama a otra:
 
 En las clases anteriores estuvimos utilizando los comandos
 
-Git Checkout Master
+```git checkout master```
 
-Git Switch
+```git switch```
 
-Uno de los comandos que utilizamos para visualizar las ramas creadas
+Uno de los comandos que utilizamos para visualizar las ramas creadas: ```git branch```
 
-Git Branch
 
-¿Cómo cambiar el nombre  de la Rama Master?
+## :star: ¿Cómo cambiar el nombre  de la Rama Master?
 
-Podemos cambiar el nombre de nuestra Rama Master a través de una configuración global
 
-En primer lugar digitaremos
+Podemos cambiar el nombre de nuestra **Rama Master** a través de una configuración global.
 
-Git branch
+En primer lugar digitaremos: ```git branch```
 
 Este comando me permite visualizar las ramas que tengo
 
-Para cambiar el nombre de las ramas:
 
-Git branch -m (nombre actual de la rama « Master») (nuevo nombre «Main»)
+### Para cambiar el nombre de las ramas:
 
- 
+```git branch -m (nombre actual de la rama « Master») (nuevo nombre «Main»)```
 
-Este comando solo te permite cambiar el nombre de la rama Master a Main o al revés de Main a Master
-
+-> Este comando solo te permite cambiar el nombre de la rama Master a Main o al revés de Main a Master
 
 
-¿Cómo configurar de manera global el nuevo nombre de nuestra rama Master?
+
+## :star: ¿Cómo configurar de manera global el nuevo nombre de nuestra rama Master?
 
 Para modificar el nombre de mi Master cada vez que el repositorio se inicia y se inicia con el nuevo nombre se debe hacer una configuración global
 
-Git config  --global init.defaultbranch Master(nuevo nombre «MAIN»)
+```git config  --global init.defaultbranch Master(nuevo nombre «MAIN»)```
 
 
 
-Para configurar nuestra rama Master de manera global y que su nombre cambie a Main, ingresamos el siguiente comando, luego ejecutaremos Git config --list para ver los cambios
+Para configurar nuestra **rama Master** de manera global y que su nombre cambie a Main, ingresamos el siguiente comando, luego ejecutaremos ```git config --list``` para ver los cambios
 
 
 
-¿Qué pasa si no me aparece ninguna rama?
+## :star: ¿Qué pasa si no me aparece ninguna rama?
 
-Cuando utilizamos el comando
-
-Git Branch
-
-    ?
+Cuando utilizamos el comando ```git branch ?```
 
 Si no nos aparece ninguna rama es porque aun no hemos realizado ningún commit y tampoco hemos creado una nueva rama.
 
-En el momento que comenzamos a realizar commit, nos figurará la rama Master o Main.
+En el momento que comenzamos a realizar commit, nos figurará la **rama Master o Main**.
 
-Con Git Branch vamos a poder visualizar las ramas que hemos creado
-
-
-
- 
-Reproducir Vídeo
- 
+Con ```git branch``` vamos a poder visualizar las ramas que hemos creado
 
 
-Proyectos en Git:
+---
+---
+
+## :star: Proyectos en Git:
 
 Cuando trabajamos proyectos en git por lo general
 
 trabajamos con diferentes versiones de nuestro Proyecto.
 
-Los desarrolladores prefieren llevar siempre un proyecto
+Los desarrolladores prefieren llevar siempre un proyecto por versiones, por pasos o por diferentes puntos:
 
-por versiones, por pasos o por diferentes puntos:
+- Se revisa el producto
 
-•Se revisa el producto
-•Se realiza un testing rápido y se verifica que el proyecto
- vaya conforme a lo pedido por el cliente.
+- Se realiza un testing rápido y se verifica que el proyecto  vaya conforme a lo pedido por el cliente.
 
-Los Tags:
+### Los Tags:
 
 Git nos permite crear este tipo de seguimientos o versiones.
 
-Para ello  nos da los Tags, un tag o etiqueta también es un
+Para ello  nos da los **Tags**, un tag o etiqueta también es un **identificador que nos permite seleccionar un grupo de modificaciones o cambios que realizamos y agruparlas en una versión o Tag**.
 
- identificador que nos permite seleccionar un grupo de
-
-modificaciones o cambios que realizamos y agruparlas en
-
-una versión o Tag.
-
-Comando para trabajar por versiones nuestro proyecto:
+### Comando para trabajar por versiones nuestro proyecto:
 
 El comando que utilizaremos para ordenar nuestras diferentes versiones del proyecto en el que estemos trabajando es el siguiente.
 
-Git Tag (Nombre que va a llevar el Tag)
+```git tag (Nombre que va a llevar el Tag)```
 
-Ej:
-
- Git Tag Versión 1
+Ej: ```git tag versión 1```
 
 Es importante seleccionar sólo los commit que van  a ser parte de esa Versión 1 de nuestro proyecto
-¿ Cómo realizar la selección de los commit que quiero versionar o separar con etiqueta?
 
-Para ello utilizaremos el comando
 
-Git Reset  --hard (n° del commit hasta donde vamos a seleccionar)
+### ¿ Cómo realizar la selección de los commit que quiero versionar o separar con etiqueta?
+
+Para ello utilizaremos el comando: ```git reset  --hard (n° del commit hasta donde vamos a seleccionar)```
 
 Solo quedan seleccionados los commit hasta el numero de hash que seleccionamos, esos commit serian los que formarán parte de la versión 1 de nuestro proyecto.
 
@@ -339,213 +291,162 @@ Sólo nos figurarán los commit hasta el número de hash seleccionado.
 El puntero se posicionará donde queremos agregar nuestra etiqueta, según el hash que seleccionemos.
 
 
-Pasos para agregar nuestra Tag o etiqueta a nuestro proyecto
-En primer lugar ejecutaremos el comando
+### :star: Pasos para agregar nuestra Tag o etiqueta a nuestro proyecto
 
-Git log --oneline
+- En primer lugar ejecutaremos el comando ```git log --oneline```
 
-Veremos todos los commit a etiquetar en una versión. Luego utilizaremos el comando
+- Veremos todos los commit a etiquetar en una versión. 
 
-Git Tag versión1 «numero del hash»
+- Luego utilizaremos el comando: ```git tag versión1 «numero del hash»```
 
-Con Git Tag añadiremos la etiqueta de nuestra versión y además con
+- Con ```git tag``` añadiremos la etiqueta de nu.estra versión y además con ``` git log --oneline --all```, veremos nuestra tag en el commit seleccionado
 
- git log --oneline --all, veremos nuestra tag en el commit seleccionado
+- Para comprobar si mi etiqueta ya se añadió utilizo el siguiente comando: ```git tag```
 
+- Nos arrojará la versión que estamos trabajando o que tenemos hasta el momento.
 
-
-
-Para comprobar si mi etiqueta ya se añadió utilizo el siguiente comando.
-
-Git Tag
-
-Nos arrojará la versión que estamos trabajando o que tenemos hasta el momento.
-
-Git log  --oneline nos mostrará la lista de los commit y en el último commit que trabajamos nos figurará,  pegado a nuestra Main, la etiqueta de la versión que estamos trabajando.
+- ```git log  --oneline``` nos mostrará la lista de los commit y en el último commit que trabajamos nos figurará,  pegado a nuestra Main, la etiqueta de la versión que estamos trabajando.
 
 
-¿Cómo eliminamos un Tags?
 
-Para eliminar un Tag o etiqueta de nuestro proyecto , realizamos el siguiente comando
+### :star: ¿Cómo eliminamos un Tags?
 
-Git tag –d (nombre de la versión)
+Para eliminar un Tag o etiqueta de nuestro proyecto , realizamos el siguiente comando: ```git tag –d (nombre de la versión)```
 
 Por ejemplo:
 
-Git Tag –d versión 1
+```git tag –d versión 1```
 
-Luego tecleamos
+Luego tecleamos: ```git tag``` y nos arrojará las versiones que nos queden o ninguna en el caso que solo tengamos una.
 
-Git Tag
+Con el comando ```git tag -d «nombre de la version»``` eliminamos etiqueta
 
-Y nos arrojará las versiones que nos queden o ninguna en el caso que solo tengamos una.
-
-Con el comando Git Tag -d «nombre de la version» eliminamos etiqueta
-
-con git log --oneline --all vemos los cambios
+Con ```git log --oneline --all``` vemos los cambios
 
 
-Otra forma de agregar etiquetas o versiones a nuestro proyecto es utilizando el siguiente comando:
+- Otra forma de agregar etiquetas o versiones a nuestro proyecto es utilizando el siguiente comando:
 
-Git tag -a «nombre del Tag» -m «mensaje del tag»
+```git tag -a «nombre del Tag» -m «mensaje del tag»```
 
-En este comando creamos una etiqueta  pero añadimos un mensaje con –m
+En este comando creamos una etiqueta  pero añadimos un mensaje con ```–m```
 
-Si tecleamos
+Si tecleamos: ```git tag```  nos aparecerá V1.0
 
-Git Tag  ( nos aparecerá)
+Si utilizamos: ```git log --oneline``` también nos figurará al lado de main o master, la etiqueta ```Tag : V1.0```
 
-V1.0
+```git show``` este comando me permite ver una descripción detallada de la etiqueta que utilizamos anteriormente.
 
-Si utilizamos
+```git tag -a v1.0  -m «versión 1 del proyecto»```
 
-Git log --oneline
-
-También nos figurará al lado de main o master, la etiqueta
-
-Tag : V1.0
-
-Git Show:
-
-Este comando me permite ver una descripción detallada de la etiqueta que utilizamos anteriormente.
-
-Git tag -a v1.0  -m «versión 1 del proyecto»
-
- digitaremos entonces:
-
-Git show V1.0
+Digitaremos entonces: ```git show V1.0```
 
 Nos mostrará una información extra:
 
+```
 -La versión o Tag
-
 -El Autor, cuando fue creado
-
 -El mensaje que añadí a la etiqueta cuando cree mi versión.
-
 -El commit donde esta ubicado.
-
 -Me aparece un Diff con los cambios realizados.
+```
 
-El comando Git Show nos permite ver detalles de nuestros cambios y modificaciones realizadas en nuestro repositorio.
+El comando ```git show``` nos permite ver detalles de nuestros cambios y modificaciones realizadas en nuestro repositorio.
 
 
 
-Creando una etiqueta desde un commit anterior:
+### Creando una etiqueta desde un commit anterior:
 
-Otra manera de crear una versión de tu proyecto es a partir de un commit
+Otra manera de crear una versión de tu proyecto es a partir de un commit con el siguiente comando:
 
-Con el siguiente comando:
+``` git log  --oneline``` y seleccionamos y copiamos el hash desde donde queremos comenzar nuestra 1ra. Versión
 
-Tecleamos git log  --oneline y seleccionamos y copiamos el hash desde donde queremos comenzar nuestra 1ra. Versión
-
-Git Tag «nombre de la versión» (n° hash)
+```git tag «nombre de la versión» (n° hash)```
 
 Por ejemplo:
 
-Git Tag v1.0  028bf55
+```
+>git tag v1.0  028bf55
+```
 
-Si digitamos el comando
+Si digitamos el comando: ```git log --oneline``` nos aparecerá la lista de los commit, pero en el commit que habíamos elegido figurará la etiqueta  donde esta nuestra **versión 1.0**
 
-Git log --oneline nos aparecerá la lista de los commit, pero en el commit que habíamos elegido figurará la etiqueta  donde esta nuestra versión 1.0
-
-Con Git log --oneline --all podremos ver la versión en el otro commit seleccionado
-
-
+Con ```git log --oneline --all``` podremos ver la versión en el otro commit seleccionado
 
 
-
-Podemos ir agregando diferentes versiones en nuestros commit
+-> Podemos ir agregando diferentes versiones en nuestros commit
 
 
 
-Para eliminar el Tag
+Para **eliminar el Tag** utilizaremos el siguiente comando: ```git tag –d «versión creada»```
 
-Utilizaremos el siguiente comando
+Ejemplo:
 
-Git tag –d «versión creada»
+```git tag –d v1.0``` y me borrará la etiqueta de mi versión
 
-Ejemplo
-
-Git tag –d v1.0
-
-Y me borrará la etiqueta de mi versión
-
-Comprobamos con el comando
-
-Git log --oneline 
+Comprobamos con el comando: ```git log --oneline ```
 
 Podemos ver que se elimino nuestra v 1.0 del commit
 
 
 
-Para agregar una etiqueta con un comentario desde el commit que seleccionemos:
+### Para agregar una etiqueta con un comentario desde el commit que seleccionemos:
+
 
 Seleccionaremos uno de los commit desde donde queremos que figure nuestra etiqueta de nuestra versión.
 
-Para ello utilizaremos:
-
-Git tag –a «nombre de la versión» –m «mensaje de la versión» n° hash
+Para ello utilizaremos: ```git tag –a «nombre de la versión» –m «mensaje de la versión» n° hash```
 
 Por ejemplo:
+``` git tag –a v1.0 –m «primera versión de mi proyecto» 7bc3d84```
 
- 
+Tecleamos ```git log --oneline``` y veremos los commit con el commit seleccionado con su etiqueta de la versión de nuestro proyecto.
 
-Git tag –a v1.0 –m «primera versión de mi proyecto» 7bc3d84
 
-Tecleamos Git log --oneline y veremos los commit con el commit seleccionado con su etiqueta de la versión de nuestro proyecto.
 
-Para agregar otras versiones a nuestro proyecto:
+### Para agregar otras versiones a nuestro proyecto:
 
 Seguiremos los pasos anteriores pero respetaremos el órden de nuestras etiquetas.
 
 En este caso si ya tenemos creada la etiqueta de nuestra Versión 1.0 , seleccionaremos otro commit desde donde vamos a iniciar nuestra versión, en este caso seria nuestra versión 2.0
 
-Git tag –a v2.0 –m « versión 2 del proyecto»
+```git tag –a v2.0 –m « versión 2 del proyecto»```
 
-Si ejecutamos Git log --oneline nos figurarán las dos versiones realizadas.
+Si ejecutamos ```git log --oneline``` nos figurarán las dos versiones realizadas.
 
-También puedes ejecutar Git Show  (mas la versión elegida ) para ver los detalles que te permite el comando mencionado.
+También puedes ejecutar ```git show  (mas la versión elegida )``` para ver los detalles que te permite el comando mencionado.
 
 Con git tag –a «nombre de la version» –m «mensaje de la version» nos permite utilizar luego git show
 
 
+---
 
-Cuando nos encontramos modificando archivos y se nos solicita unas nuevas modificaciones
+### :star: Cuando nos encontramos modificando archivos y se nos solicita unas nuevas modificaciones
 
 Cuando  nos encontramos modificando, trabajando o creando más archivos de nuestro proyecto, ya sea porque vamos avanzando o porque simplemente hay modificaciones que hacer, es muy probable que en algún punto tengamos que hacer algo así como un freno de emergencia, como un stop de emergencia.
 
-Por ejemplo: Si estamos trabajando en algún archivo y de pronto el cliente pide
-
-una actualización urgente o un cambio que es de vida o muerte, es algo que debe hacerse en el momento.
+Por ejemplo: Si estamos trabajando en algún archivo y de pronto el cliente pide una actualización urgente o un cambio que es de vida o muerte, es algo que debe hacerse en el momento.
 
 Pero aún no se ha terminado con las modificaciones  que se estaban realizando, no has acabado tu progreso  por Múltiples razones.
 
-Cómo vamos a solucionar esto?
+**Cómo vamos a solucionar esto?**
 
-Git Stash
+```git stash```
 
 Me permite generar  un campo temporal en el que se va a guardar el progreso de nuestro proyecto.
 
 Hacemos la modificación que el cliente pide y ya luego podemos continuar en donde lo habíamos dejado.
 
-Vamos a teclear Git Stash
-
-Y nos guardará los cambios sin que se alteren las modificaciones en que estamos trabajando.
+Vamos a teclear ```git stash``` y nos guardará los cambios sin que se alteren las modificaciones en que estamos trabajando.
 
 Para realizar las modificaciones que nuestro cliente nos esta pidiendo con urgencia.
 
-Luego ejecutaremos git add y comitearemos las modificaciones.
+Luego ejecutaremos ```git add``` y comitearemos las modificaciones.
 
-Git commit –am «mensaje del commit»
+```git commit –am «mensaje del commit»```
 
-Luego con el comando
+Luego con el comando: ```git stash pop``` recuperaremos las modificaciones en las que estábamos trabajando y podremos seguir trabajando en ellas.
 
-Git stash pop
-
-recuperaremos las modificaciones en las que estábamos trabajando y podremos seguir trabajando en ellas.
-
-El comando Git stash me permite guardar las modificaciones que estaba realizando para atender alguna modificación mas urgente y después seguir trabajando en l que estaba realizando
+El comando ```git stash``` me permite guardar las modificaciones que estaba realizando para atender alguna modificación mas urgente y después seguir trabajando en l que estaba realizando
 
 
 
@@ -554,90 +455,123 @@ Añado modificaciones de urgencia y luego ejecuto el comando git stash  pop y me
 
 
  
-Reproducir Vídeo
+---
+---
  
 
-Actividades Clase n°6:
+## :star: Actividades Clase n°6:
 
 
-Actividad n°1:
+### Actividad n°1:
 
- Responder Cuestionario para asistencia (Aula del Campus)
+Responder Cuestionario para asistencia (Aula del Campus)
 
-Actividad n°2:
+### Actividad n°2:
 
 Realizar la siguiente actividad utilizando comandos vistos en la clases anteriores en la terminal Git Bach
 
 1- Crear un nuevo repositorio Git con el nombre Clase6 desde la terminal Git Bach
 
-2-iniciar repositorio
+2- iniciar repositorio
 
-3-configurar repositorio
+3- configurar repositorio
 
 4- crear 2 carpetas de nombre :
-
-        -Teoría
-
-        - Código
+```
+-Teoría
+- Código
+```
 
 5-abrimos carpeta Teoría y creamos una subcarpeta:
+```
+- Trabajo
+```
 
-        - Trabajo
+luego abrimos la carpeta Código y creamos una subcarpeta:
 
-     luego abrimos la carpeta Código y creamos una subcarpeta:
+```
+-Evaluación
+```
 
-        -Evaluación.
 
-Actividad n° 3:
+### Actividad n° 3:
 
 Realizar la siguiente actividad utilizando los comandos vistos en la terminal Git Bash y en el editor de texto que utilicen.
 
-1-  Abrimos el editor de texto, creamos un nuevo documento con el nombre :         
+1-  Abrimos el editor de texto, creamos un nuevo documento con el nombre :    ```-Actividad```
 
-          -Actividad
+2- Guardamos documento en nuestra carpeta trabajo. ```  Trabajo <-Actividad```
 
-    Guardamos documento en nuestra carpeta trabajo.
+3- Realizamos cuatro modificaciones en el archivo y commiteamos  cada cambio realizado utilizando comandos vistos.
 
-      
+4- Creamos otro documento con el nombre en nuestro editor de texto con el nombre: ```-Practica```
 
-          Trabajo <-Actividad
-
-2- Realizamos cuatro modificaciones en el archivo y commiteamos  cada cambio realizado utilizando comandos vistos.
-
-3- Creamos otro documento con el nombre en nuestro editor de texto con el nombre:
-
-         -Practica
-
-      Guardamos el documento Practica en la carpeta Evaluación
-
-           Evaluación <- Practica
+Guardamos el documento Practica en la carpeta Evaluación: ```Evaluación <- Practica```
 
 4- realizamos 4 modificaciones en el documento Práctica, añadimos cambios y commit por separado
 
 
-Actividad n° 4:
+### Actividad n° 4:
 
 Realizar la siguiente actividad utilizando los comandos vistos las clases anteriores:
 
-1- Creamos una rama auxiliar con el nombre :
+1- Creamos una rama auxiliar con el nombre : ```-Prueba```
 
-           -Prueba
+2- Creamos una nueva carpeta con el nombre : ```-Integrador```
 
-2- Creamos una nueva carpeta con el nombre :
+3- Abrimos un documento en nuestro editor de texto con el nombre :``` -Readme```
 
-           -Integrador
+Guardamos documento en nuestra carpeta de nombre Integrador ```Integrador <- Readme```
 
-3- Abrimos un documento en nuestro editor de texto con el nombre :
+4- Realizamos 4 modificaciones en nuestro documento **Readme**, añadimos cada modificación y commit por separado.
 
-            -Readme
+5- Fusionamos **Rama Prueba** con nuestra **Rama Clase6 (Master o Main)**
 
-     Guardamos documento en nuestra carpeta de nombre Integrador
+6- Tomar captura de la fusión de las ramas.
 
-             Integrador <- Readme
 
-4- Realizamos 4 modificaciones en nuestro documento Readme, añadimos cada modificación y commit por separado.
+### Actividad nº 5:
 
-5 - Fusionamos Rama Prueba con nuestra Rama Clase6 (Master o Main)
+Cuestionario Individual (Evaluativo) - responder en el aula del campus
 
- 6- Tomar captura de la fusión de las ramas.
-Esta lección no está preparada.
+### Actividad nº 6
+
+**Trabajo grupal** (evaluativo)
+
+**Formato** word o pdf (1 solo por grupo)
+
+**Nombre del grupo y de sus integrantes**:
+
+**Fecha de entrefa**: Martes 24/05
+
+**Entrega del trabajo**: por correo a la profesora
+
+Responder las siguientes preguntas: desarrollar y utilizar comandos vistos, se puede acompañar con capturas.
+
+1- ¿Cómo creamos una carpeta desde git bach?
+
+2- ¿Cómo iniciamos nuestro repositorio git?
+
+3- ¿Qué comando utilizamos al configurar usuario y email?
+
+4- ¿Cuál es el comando que me permite viajar en el tiempo de los diferentes commits?
+
+5- ¿A que llamamos Rama Master o Main?
+
+6- ¿Cuál es la diferencia entre Rama Auxiliar y Rama Master o Main?
+
+7- ¿Qué comando utilizamos para cambiar de una rama a otra?
+
+8- ¿Se puede Modificar la Rama Master?
+
+9- ¿Cuál es el comando para crear una nueva rama?
+
+10- Mencionar 3 funcionalidades que tiene ```git checkout```
+
+11- ¿Cuál es el comando que me permite ver de manera gráfica los commits y las ramas creadas ?
+
+12 - Realizar una captura del último punto realizado, se puede utilizat captura de la actividad número 4. 
+
+
+---
+---
