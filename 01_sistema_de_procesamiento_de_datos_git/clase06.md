@@ -20,21 +20,21 @@
 
 ## :star: Funcionalidades de Nuestras ramas:
 
-Una rama es un espacio temporal donde  vamos a trabajar diferentes funcionalidades que van a ser agregadas a nuestro proyecto.
+Una rama es un **espacio temporal donde  vamos a trabajar diferentes funcionalidades que van a ser agregadas a nuestro proyecto**.
 
-En la rama Master o rama Main va a ser  la rama principal de todo el proyecto.
+En la rama **Master** o rama **Main** va a ser  la **rama principal** de todo el proyecto.
 
-Git los va a permitir ir avanzando de manera cronológica sobre nuestro proyecto.
+Git nos va a permitir ir avanzando de manera **cronológica** sobre nuestro proyecto.
 
-También podremos viajar en el tiempo y volver a consultar modificaciones anteriores.
+También podremos **viajar en el tiempo** y volver a consultar modificaciones anteriores.
 
 ---
 
-## :star: Nuestra  Rama Máster o Main es un espacio temporal.
+## :star: Nuestra  Rama Máster o Main es un espacio temporal
 
 Aquí es donde nosotros trabajamos con nuestro proyecto.
 
-Cada punto representa una confirmación , o sea un avance, una nueva funcionalidad, un punto en el tiempo.
+Cada punto representa una confirmación, o sea un avance, una nueva funcionalidad, un punto en el tiempo.
 
 A medida que nuestro proyecto avanza  vamos trabajando en modificaciones o actualizaciones que vamos haciendo para su mejora.
 
@@ -44,130 +44,127 @@ Estas modificaciones las va a realizar  de manera cronológica, de manera lineal
 
 ## :star: No siempre los cambios que realicemos serán utilizados en nuestro proyecto
 
-Hay ocasiones en las que un cambio no necesariamente va a ser aplicado al proyecto.
+- Hay ocasiones en las que un cambio no necesariamente va a ser aplicado al proyecto.
 
-Puede ser un cambio que el cliente ha pedido y que nada más es para prueba.
+- Puede ser un cambio que el cliente ha pedido y que nada más es para prueba.
 
-Puede ser un cambio que el proyecto no amerita al final de todo.
+- Puede ser un cambio que el proyecto no amerita al final de todo.
 
-Por éste motivo hacemos uso de ramas auxiliares.
+- Por éste motivo hacemos uso de ramas auxiliares.
 
-Una regla general de Git es que en la rama Main nunca se debe trabajar cambios, solo en ramas auxiliares.
+- Una regla general de Git es que en la rama Main nunca se debe trabajar cambios, solo en ramas auxiliares.
 
-Hay una regla que dice que en la rama main nunca se debe trabajar cambios, lo hemos hecho a través de las ramas auxiliares.
+- Hay una regla que dice que en la rama main nunca se debe trabajar cambios, lo hemos hecho a través de las ramas auxiliares.
 
-Ahora bien, si en dado caso nosotros queremos que estos cambios sí se incorporen a la Rama Master,
+- Ahora bien, si en dado caso nosotros queremos que estos cambios sí se incorporen a la Rama Master, a la Rama Main, o sea el proyecto como tal.
 
-a la Rama Main, o sea el proyecto como tal.
+- Cuando hacemos cambios en el proyecto, que no estamos seguros que se van a implementar, simplemente podemos eliminarlos, pero no va a haber ningún cambio sobre la rama main.
 
-Cuando hacemos cambios en el proyecto, que no estamos seguros que se van a implementar, simplemente podemos eliminarlos, pero no va a haber ningún cambio sobre la rama main.
-
-Y a eso es a lo que se le conoce como trabajo con  ramas.
+-> **Y a eso es a lo que se le conoce como trabajo con  ramas.**
 
 ---
 
 ## :star: Funcionalidad del  Merge :
 
-Cuando hacemos un  Merge, estamos realizando la unión de una Rama temporal a la Rama Main.
+Cuando hacemos un  Merge, estamos realizando la **unión de una Rama temporal a la Rama Main**.
 
 En el último punto se realiza la unión y los puntos del commit que hicimos en nuestra rama auxiliar se unen con los commit de nuestra rama Master.
 
+```
 
+x ---- x ----- x ------ x ------ x ------ x master
+           |                        |
+           ------- x ------- x -----
+                 rama aux
+```
 
-¿Cómo se trabaja con Git?
+---
 
-•Por lo general siempre se trabaja con ramas.
-•Siempre tendremos una rama principal (Master o Main) y ramas auxiliares
-•La Rama Master no podemos tocarla.
+## :star: Trabajo en equipo
 
-¿Quiénes son los únicos que van a poder trabajar sobre la Master ?
+### ¿Cómo se trabaja con Git?
+
+- Por lo general siempre se trabaja con ramas.
+
+- Siempre tendremos una rama principal (Master o Main) y ramas auxiliares
+
+- La Rama Master no podemos tocarla.
+
+### ¿Quiénes son los únicos que van a poder trabajar sobre la Master ?
 
 Siempre en cada proyecto habrá líderes, ellos serán los únicos que estarán a cargo de modificar la Master, los demás integrantes no estarán autorizados.
 
-Creación de Ramas:
+### Creación de Ramas:
 
 Desde las ramas de cada desarrollador, se sacarán ramas para trabajar en la rama que le queda a cada uno.
 
 Una vez que se cumple el trabajo en cada rama se debe volver a la rama Master.
 
-Cuando ejecutamos Merge:
+### Cuando ejecutamos Merge:
 
-Cuando hablamos de utilizar el comando Merge, hablamos de la integración de las ramas auxiliares (que se han estado trabajando por separado) a nuestra rama Master.
+Cuando hablamos de utilizar el comando Merge, hablamos de la **integración de las ramas auxiliares** (que se han estado trabajando por separado) **a nuestra rama Master**.
 
 Puede que hemos en la creación de esas ramas auxiliares hemos estado tocando y modificando las mismas ramas y esto puede generar conflictos.
 
-Cambio sólo realizados en nuestras ramas auxiliares:
+### Cambio sólo realizados en nuestras ramas auxiliares:
 
-Todos los cambios que realizaremos en nuestro proyecto los realizaremos en nuestras ramas auxiliares para luego pasarlos a nuestra Rama Master o Main.
+- Todos los cambios que realizaremos en nuestro proyecto los realizaremos en nuestras ramas auxiliares para luego pasarlos a nuestra Rama Master o Main.
 
-Una vez que ya confirmamos nuestros cambios en nuestras Ramas auxiliares, son enviados a la Master o Main.
+- Una vez que ya confirmamos nuestros cambios en nuestras Ramas auxiliares, son enviados a la Master o Main.
 
-Allí los líderes controlarán que los cambios realizados funcionen
+- Allí los líderes controlarán que los cambios realizados funcionen
 
+---
+---
 
-Nuestra carpeta . GIT IGNORE
+## :star: Comandos git
 
- .git ignore
+### Nuestra carpeta .git ignore
 
-Es una carpeta creada en del directorio de trabajo en el momento de ejecutar git init. Esta carpeta contiene reglas sobre qué archivos y/o carpetas deben ser ignorados por git.
+```.git ignore```
 
-Cualquier archivo que ignoremos no aparecerá en la salida de un git status y además será ignorado cuando utilicemos un comando git add. Esto no quiere decir que los archivos ignorados sean eliminados de tu equipo local, sino que permanecerán ahí pero nunca se subirán al repositorio. 
+Es una carpeta creada en del directorio de trabajo en el momento de ejecutar ```git init```. Esta carpeta contiene reglas sobre qué archivos y/o carpetas deben ser ignorados por git.
 
-Vamos a crear un documento para  que luego sea ignorado por Git de nombre requisitos
+Cualquier archivo que ignoremos no aparecerá en la salida de un git status y además será ignorado cuando utilicemos un comando``` git add```. Esto no quiere decir que los archivos ignorados sean eliminados de tu equipo local, sino que permanecerán ahí pero nunca se subirán al repositorio. 
 
+#### Practica:
 
+- 1 - Vamos a crear un documento para  que luego sea ignorado por Git de nombre requisitos **requisitos.txt**
 
-En nuestra terminal Git Bash vamos a visualizar con git status ambos archivos creados.  
+- 2 - En nuestra terminal Git Bash vamos a visualizar con ```git status``` ambos archivos creados.  
 
+- 3 - Creamos un documento **.gitignore** y dentro de ese documento escribiremos el nombre de los archivos que queremos que sean ignorados por git, en este caso escribiremos el requisitos.
 
+.gitignore
+```
+#Aqui esta la lista de todos los archivos ignorados
+requisitos.txt
+```
 
-Creamos un documento .gitignore y dentro de ese documento escribiremos el nombre de los archivos que queremos que sean ignorados por git, en este caso escribiremos el requisitos .
+- 4 - Volvemos a ejecutar ```git status``` y automáticamente git nos ignorará los cambios realizados que hemos guardado en nuestro archivo **.gitignore**
 
+---
 
+## :star: Ignorando Archivos:
 
-
-
-Volvemos a ejecutar Git Status y automáticamente git nos ignorará los cambios realizados que hemos guardado en nuestro archivo .gitignore
-
-
-
-Ignorando Archivos:
-
-Para ignorar archivos utilizaremos el comando:
-
-Git Ignore
-
-Este comando nos permite mover los archivos que no utilicemos  en nuestras ramas  de Git
-
-Ignorando Archivos:
-
-Para ignorar archivos utilizaremos el comando:
-
-Git Ignore
+Para ignorar archivos utilizaremos el comando: ```git ignore```
 
 Este comando nos permite mover los archivos que no utilicemos  en nuestras ramas  de Git
 
+### Para cambiar nuestro Editor de Texto:
 
-
-Para cambiar nuestro Editor de Texto:
-
- El editor de texto que trae por defecto Git, puedes configurar el editor de texto favorito, con la siguiendo  tabla:
+El editor de texto que trae por defecto Git, puedes configurar el editor de texto favorito, con la siguiendo  tabla:
 
 Los cuatro comandos que acabamos de ejecutar arriba solo deben ejecutarse una vez:
 
-El comando --globalle dice a Git que use la configuración para cada proyecto, en su cuenta de usuario, en esta computadora.
+El comando ```--globalle``` dice a Git que use la configuración para cada proyecto, en su cuenta de usuario, en esta computadora.
 
-Puede comprobar su configuración en cualquier momento:
 
- 
+```git config --list```
 
-Editor
-
-Comando de configuración
-
-Átomo
-
-$ git config --global core.editor "atom --wait"
+| Editor | Comando de configuración |
+| ------ | ------------------------ |
+| Átomo | ```$ git config --global core.editor "atom --wait"``` |
 
 nano
 
