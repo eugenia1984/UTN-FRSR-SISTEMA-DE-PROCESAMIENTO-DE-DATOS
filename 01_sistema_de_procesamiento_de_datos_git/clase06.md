@@ -542,7 +542,7 @@ Cuestionario Individual (Evaluativo) - responder en el aula del campus
 
 **Nombre del grupo y de sus integrantes**:
 
-**Fecha de entrefa**: Martes 24/05
+**Fecha de entrega**: Martes 24/05
 
 **Entrega del trabajo**: por correo a la profesora
 
@@ -570,7 +570,7 @@ Responder las siguientes preguntas: desarrollar y utilizar comandos vistos, se p
 
 11- ¿Cuál es el comando que me permite ver de manera gráfica los commits y las ramas creadas ?
 
-12 - Realizar una captura del último punto realizado, se puede utilizat captura de la actividad número 4. 
+12 - Realizar una captura del último punto realizado, se puede utilizar captura de la actividad número 4. 
 
 
 ---
