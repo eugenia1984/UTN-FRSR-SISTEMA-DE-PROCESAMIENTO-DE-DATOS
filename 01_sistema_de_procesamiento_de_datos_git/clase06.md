@@ -530,6 +530,8 @@ Guardamos documento en nuestra carpeta de nombre Integrador ```Integrador <- Rea
 6- Tomar captura de la fusión de las ramas.
 
 
+[aca esta la practica y en el readme deje los commits y logs](https://github.com/eugenia1984/UTN-FRSR-SISTEMA-DE-PROCESAMIENTO-DE-DATOS/tree/main/01_sistema_de_procesamiento_de_datos_git/clase6)
+
 ### Actividad nº 5:
 
 Cuestionario Individual (Evaluativo) - responder en el aula del campus
