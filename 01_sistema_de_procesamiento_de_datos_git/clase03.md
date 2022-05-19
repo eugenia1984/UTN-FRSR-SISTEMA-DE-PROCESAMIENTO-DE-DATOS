@@ -174,7 +174,7 @@ Paso 3: En la terminal de Bash  tecleamos ```> git status```
 
 Paso 4: Agregamos archivos a nuestra área de preparación ```> git add .```
 
-Paso 5:  commiteamos el archivo que ya está en nuestra área de preparación ```> git commit – m “escribimos nuestra primara línea del documento”```, damos enter.
+Paso 5:  commiteamos el archivo que ya está en nuestra área de preparación ```> git commit –m “escribimos nuestra primara línea del documento”```, damos enter.
 
 Paso 6: volvemos a nuestro editor de texto y escribimos una 2da. línea y guardamos. (Importante que no se olviden).
 
