@@ -398,6 +398,7 @@ El comando **mkdir** (make directory) crea una carpeta. Ejemplo: ``` mkdir nombr
 
 
 ---
+---
 
 ### :star:  Actividad 1: Git: tarea para próxima clase.
 
@@ -407,13 +408,41 @@ Crear un carpeta de Git con usuario local con sus nombre, apellido y el e-mail.
 
 Todas las carpetas que van a crear para trabajar en Phyton o Java, deben crearse desde el repositorio de Git.
 
-Ej:    
+Para crear la carpeta git, inicializar el repositorio y guardar mi usuario e email local:  
 ```
-mkdir phyton
-git init
+> mkdir git
+> git init
+> git config --local user.name "Maria Eugenia Costa"
+> git config --local user.name "costamariaeugenia1@gmail.com"
 ```
 
-Se creará la carpeta phyton desde Git
+Para crear las carpetas para trabajar en pytho y java
+```
+>mkdir phyton
+>mkdit java
+```
+
+Si las quiero ver: ```ls```
+
+Para entrar dentro de la carpeta de python, inicializar otro repositorio de git y configurar de modo local:
+
+```
+> cd python
+> git init
+> git config --local user.name "Maria Eugenia Costa"
+> git config --local user.name "costamariaeugenia1@gmail.com"
+```
+
+
+Para salir del directorio python y entrar al directorio java, inicializar otro repositorio de git y configurar de modo local:
+```
+> cd ..
+> cd java
+> git init
+> git config --local user.name "Maria Eugenia Costa"
+> git config --local user.name "costamariaeugenia1@gmail.com"
+```
+
 
 ---
 ---
