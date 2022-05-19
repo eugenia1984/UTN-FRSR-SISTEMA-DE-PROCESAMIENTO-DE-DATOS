@@ -16,6 +16,7 @@ Vimos los comandos:
 ```
 
 ---
+---
 
 ## :star: Modificaciones de Carpetas
 
@@ -210,6 +211,33 @@ Paso 13: Seguimos en nuestra terminal y tecleamos
 > git diff 'nombre del archivo en el que estamos  modificando'
 > git diff --stat -> me devuelve las últimas modificaciones pero en forma de resumen.
 > git diff  --numstat -> solo devuelve número de inserciones y eliminaciones.
+```
+
+```
+juan@user MINGW64 ~/Desktop/EUGE CASA/tecnicatura/sistema_procesamiento_datos/tecnicatura_git/readme (main)
+$ git diff README.md
+diff --git a/tecnicatura_git/readme/README.md b/tecnicatura_git/readme/README.md
+index 417f157..4083bfc 100644
+--- a/tecnicatura_git/readme/README.md
++++ b/tecnicatura_git/readme/README.md
+@@ -1,3 +1,7 @@
+ Creo un readme para practicar con git
+
+ Escribo algo mas pra poder guardar y hacer el segundo commit
++
++Escribimos nuevamente
++
++Otra modificacion
+\ No newline at end of file
+
+juan@user MINGW64 ~/Desktop/EUGE CASA/tecnicatura/sistema_procesamiento_datos/tecnicatura_git/readme (main)
+$ git diff --stat
+ tecnicatura_git/readme/README.md | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+juan@user MINGW64 ~/Desktop/EUGE CASA/tecnicatura/sistema_procesamiento_datos/tecnicatura_git/readme (main)
+$ git diff --numstat
+4       0       tecnicatura_git/readme/README.md
 ```
 
 ---
