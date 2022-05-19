@@ -22,6 +22,7 @@ En git bash ``` git```
 
 
 
+
 ### :star:  ¿Que es un commit ?
 
 - Cada vez que se guarda un trabajo, git crea un **commit** (una confirmacion)
@@ -31,13 +32,15 @@ En git bash ``` git```
 - Vamos a tener una rama principal **master/main** y cada **commit** va a ser un nuevo punto (en cada uno vemos un cambio)
 
 
+
 ### :star:  ¿ Que es una rama?
 
-- Un conjunto de commits que se unene entre si y sufren diferentes cambios
+- Un conjunto de commits que se unen entre si y sufren diferentes cambios.
 
-- En cada cambio debe hacerse un commit
+- En cada cambio debe hacerse un commit.
 
-- Las ramas auxiliares son punteros ligeros y van a administrar una separación de la rama principal. Una vez que se realizaron los cambios en nuestra rama auxiliar, volvemos a incorporarnos en la rama principal o Master.
+- Las **ramas auxiliare**s son punteros ligeros y van a administrar una separación de la rama principal. Una vez que se realizaron los cambios en nuestra rama auxiliar, volvemos a incorporarnos en la rama principal o Master.
+
 
 ---
 
@@ -71,11 +74,11 @@ proyecto                 area
 
 ### :star:  Flujo de trabajo en git
 
-- Editas uan serie de archivos en tu directorio de trabajo
+- Editas una serie de archivos en tu directorio de trabajo.
 
-- Preparas los archivos que quieras subir al directoria, añadiendolos a tu area de preparacion
+- Preparas los archivos que quieras subir al directorio, añadiendolos a tu area de preparacion.
 
-- Confirmas los cambios, lo que toma los archivos tal y como están en el área de preparación, y guarda esas instantáneas de forma permanente en tu directorio de Git
+- Confirmas los cambios, lo que toma los archivos tal y como están en el área de preparación, y guarda esas instantáneas de forma permanente en tu directorio de Git -> **commiteas**
 
 
 ---
@@ -89,18 +92,26 @@ proyecto                 area
 
 - Git aun no se entera de la existencia de estos archivos, ya que aún no son parte de Git y tampoco es parte del espacio de trabajo.
 
-- git va a crear carpetas ocultas con (.)
+- git va a crear carpetas ocultas con **.**
+
+
 
 ---
 
 ### :star:  Carpetas ocultas en git
 
-nos vamos a **Vista** -> tildamos **elementos ocultos**, y nos aparecerán las carpetas ocultas o en **propiedades de archivo**, destilamos la opción oculta, para que nos aparezca.
+-> Nos vamos a **Vista** 
+
+-> tildamos **elementos ocultos**, y nos aparecerán las carpetas ocultas o en **propiedades de archivo**
+
+-> destilamos la **opción oculta**, para que nos aparezca.
 
 
 ---
+---
 
 ### :star:  Area de preparacion ( STAGING AREA)
+
 
 - Se ha marcado un archivo modificado en su version actual para que vayan en tu proxima confirmacion.
 
@@ -116,32 +127,36 @@ nos vamos a **Vista** -> tildamos **elementos ocultos**, y nos aparecerán las c
 - Eso es un lugar temporal, como una memoria caché donde vamos a tener nuestros archivos.
 Por último,  lo pasamos al repositorio.
 
+
+---
 ---
 
 
 ### :star:  Area de repositorio (CARPETA GIT)
 
-- Repositorio = donde se alamcenan los datos actualizados e historicos de cambios que realicemos en nuestro proyecto
+- **Repositorio** = donde se almacenan los datos actualizados e historicos de cambios que realicemos en nuestro proyecto.
 
-- Esta carpeta va a ser **.git**
+- Esta carpeta va a ser **.git**.
 
 - Los datos del archivo están guardados en tu base de datos local.
 
 
 ---
+---
+
 
 ### :star: Pasos realizados en clase 
 
 ```
 Paso 1 : Abrimos terminal git bash
-Paso 2: Creamos carpeta  > mkdir tecnicatura_git
-Paso 3: entrar a la carpeta > cd tecnicatura_git
-Paso 4:Crear carpetas > mkdir java  y luego >mkdir python
-Paso 5: >git init  (creamos el repositorio)
-Paso 6: crear firma > git config --local user.name
-Paso 7: > git config --local user.email    
-Paso 8: revisar la firma con > git config –list
-Paso 9 : salir con q o limpiar terminal o limpiar pantalla con clear
+Paso 2:  Creamos carpeta  > mkdir tecnicatura_git
+Paso 3:  Entrar a la carpeta > cd tecnicatura_git
+Paso 4:  Crear carpetas > mkdir java  y luego >mkdir python
+Paso 5:  > git init  (creamos el repositorio)
+Paso 6:  Crear firma > git config --local user.name "Maria Eugenia Costa"
+Paso 7:  Crear el email: > git config --local user.email  mariaeugenia1@gmail.com  
+Paso 8:  Revisar la firma con > git config –list
+Paso 9 : Salir con q o limpiar terminal o limpiar pantalla con clear
 ```
 
 
@@ -162,9 +177,19 @@ Con el comando  ```ls –la ``` (muestra los archivos y directorios ocultos en u
 Nos aparecerán  todos los archivos ocultos
 
 
+---
+---
+
+
 ### :star: Todos los archivos que comienzan con . son carpetas ocultas
 
--> la carpeta **.git** va a estar oculta. Esto va a hacer que no genere ninguna molesta al usuario en el desarrollo del proyecto
+-> la carpeta **.git** va a estar oculta. 
+
+-> Esto va a hacer que no genere ninguna molesta al usuario en el desarrollo del proyecto
+
+
+---
+
 
 ### Comandos:
 
@@ -188,6 +213,7 @@ git --help branch
 
 
 ---
+---
 
 
 ### :star:  Pasar al estado de preparacion
@@ -196,14 +222,14 @@ git --help branch
 
 - Para guardar o aprobar (commit) ficheros en nuestro repositorio Git, primero se necesita añadirlos al área de preparación.
 
-- Los usuarios mueven los cambios desde el espacio  de trabajo al área de preparación, antes de aprobarlos/commit hacia el repositorio. 
+- Los usuarios mueven los cambios desde el **espacio de trabajo** al **área de preparación**, antes de aprobarlos/commit hacia el repositorio. 
 
 - El comando ```git add .``` permite registrar todos los cambios del directorio de trabajo.
 
 - Si queremos eliminar el archivo de nuestra zona de preparación antes de enviarlo al repositorio.
 
 ```
-git  rm --cached "nombre del archivo"
+git  rm --cached <nombre del archivo>
 git reset
 ```
      
@@ -213,16 +239,18 @@ En espacio de preparación ya tenemos un archivo para enviar a nuestro repositor
 ---
 
 
-En espacio de trabajo ya tenemos un archivo para enviar
+**En espacio de trabajo ya tenemos un archivo para enviar**
 
 
 ---
+---
+
 
 ### :star: Git status
 
-- Permite visualizar el estado de los cambios en el directorio de trabajo y en el área de preparación comparando con el repositorio. Muestra una lista de los archivos modificados o añadidos.
+- ```git status``` permite visualizar el estado de los cambios en el directorio de trabajo y en el área de preparación comparando con el repositorio. Muestra una lista de los archivos modificados o añadidos.
 
-- Aun no tenemos un commit y nos avisa los archivos no traqueados en rojo
+- Aun no tenemos un commit y nos avisa los **archivos no traqueados** en **rojo**.
 
 - Para pasar nuestros archivos desde el área de trabajo al área de preparación utilizaremos el comando ``` git add ``` y el **nombre del archivo** que vamos a mover o **.**
 
@@ -230,7 +258,10 @@ En espacio de trabajo ya tenemos un archivo para enviar
 
 - Una vez traqueado el archivo esta en color **verde**, esta listo para commitear, para ser enviado al repositorio
 
+
 ---
+---
+
 
 ### :star: Commit
 
@@ -239,6 +270,8 @@ En espacio de trabajo ya tenemos un archivo para enviar
 - Se inicia los commit (carpeta .git)
 
 - Nos abrirá un editor de texto que se llama **Vim**
+
+
 
 #### Editor de texto(Vim)
 
@@ -256,13 +289,13 @@ En espacio de trabajo ya tenemos un archivo para enviar
 
 - Comandos para guardar texto
 ```
-Ctrl S
+Ctrl + S
 ```
 
 
 - Comando para salir del editor
 ```
-Ctrl X
+Ctrl + X
 ```
 
 - Nos aparece el primer commit: ``` mi primer commit con git```( se inicia el proyecto)
@@ -274,6 +307,8 @@ Ctrl X
 
 
 ---
+---
+
 
 ### :star: Git log
 
@@ -281,7 +316,7 @@ Ctrl X
 
 - Es la bitacora que muestra en pantalla todos los commits (todos los mensajes)
 
-- Nos aparece el Autor del commit( nombre, apellido y el correo)
+- Nos aparece el Autor del commit (nombre, apellido y el correo)
 
 - Fecha y hora del sistema y el mensaje que realizamos en nuestro editor de texto.
 
@@ -292,17 +327,23 @@ Ctrl X
 
 ### :star: Pasos para añadir archivos a nuestro repositorio y crear nuestros primer commit:
 
+
 **Paso 1**: Una vez que tenemos ya creadas las carpetas Tecnicatura Git y las subcarpetas Java y Python con sus respectivos archivos dentro.
+
 
 **Paso 2**: Tecleamos ```git status``` ->  veremos los archivos listos para ser enviados a nuestra área de preparación, los archivos deben figurar en color rojo.
 
+
 **Paso 3**: Tecleamos ```git add .``` para añadir lo que contiene ambas carpetas
+
 
 En caso de querer agregar un archivo especifico se debe teclear ```git add nombre_del_archivo```
 
 Para borrar el archivo del área de preparación ```git reset .```
 
+
 **Paso 4**: nuevamente tecleamos ```git status``` -> ahora nos aparecerán los archivos que fueron añadidos en color verde 
+
 
 **Paso 5** :  nuestros archivos están listos para ser commiteados 
 
@@ -314,9 +355,12 @@ Guardamos nuestro mensaje del editor con : **w**  o  **Ctrl S** y **Ctrl. x** pa
 
 Otra opción es: ```git commit --m  "mi primer commit de git" ```y damos enter
 
+
 **Paso 6** : ```git log```   leemos nuestro commit 
 
 ---
+---
+
 
 ### :star: Tarea
 
