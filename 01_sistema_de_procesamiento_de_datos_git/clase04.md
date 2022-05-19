@@ -11,10 +11,10 @@
 ## Comandos GIT ya vistos:
 
 ```
-git commit –am « nota de nuestro cambio»
-git checkout «nombre de archivo»
+git commit –am "nota de nuestro cambio"
+git checkout <nombre de archivo>
 git checkout –f
-git restore --staged «nombre de archivo»
+git restore --staged <nombre de archivo>
 git diff
 git diff --stat
 git diff --numstat
@@ -31,7 +31,7 @@ en nuestro proyecto
 
 Cada commit tiene un número de id o #
 
-Otras funciones de **git checkout** -> Con ``` git checkout «más el número de identificación»```(se pueden copiar sólo los primeros 7 dígitos) podremos ver entonces a como estaba nuestro proyecto sin las modificaciones nuevas
+Otras funciones de **git checkout** -> Con ``` git checkout <más el número de identificación>```(se pueden copiar sólo los primeros 7 dígitos) podremos ver entonces a como estaba nuestro proyecto sin las modificaciones nuevas
 
 Para volver al presente donde esta mi último commit ejecutamos -> ``` git checkout master```
 
@@ -42,7 +42,7 @@ Con el comando ``` git log``` se ven los commits hasta el momento
 ---
 
 
-- Para utilizar el comando Git Checkout y el nª hash # de cada commit seleccionaremos, cualquier commit que hemos realizado
+- Para utilizar el comando ```git checkout``` y el nº hash # de cada commit seleccionaremos, cualquier commit que hemos realizado
 
 - Una vez seleccionado lo copiaremos
 
@@ -64,15 +64,19 @@ que seleccionamos, los demás commit mas nuevos no aparecerán. Volvemos a selec
 
 
 ---
+---
 
 ## :star: git log --raw
 
-- Este comando nos permite saber cuales fueron los cambios que pasaron en un commit. 
+- ```git log --raw```, este comando nos permite saber cuales fueron los cambios que pasaron en un commit. 
 
 - Nos mostrará también que tipo de acciones hicimos si modificamos un archivo, lo borramos o añadimos algo nuevo. Además nos muestra el código de seguridad de nuestros commit.
 
 
+
 ---
+---
+
 
 ## :star: git log
 
@@ -99,10 +103,12 @@ por ej: el nombre del autor, correo, fecha, etc.
 
 ---
 
-El comando Git log es nuestra línea de tiempo.
+El comando ```git log``` es nuestra línea de tiempo.
 
 Esa línea la llamaremos MASTER y siempre se actualizará hacia arriba.
 
+
+---
 ---
 
 ## :star: RAMAS
@@ -120,7 +126,7 @@ o Main                     |
 ```
 
 
-Cada línea tiene su independencia y nuevas características, esto nos permite solucionar problemas que pueden surgir en la Master ý así evitar dañar nuestro proyecto.
+Cada línea tiene su independencia y nuevas características, esto nos permite solucionar problemas que pueden surgir en la Master y así evitar dañar nuestro proyecto.
 
 ```
 MASTER X ----- X ------ X ------ X ------ X
@@ -153,12 +159,15 @@ Cada línea del tiempo se llamarán ramas como si fuera un árbol.
 -  Si queremos volver a la rama Master ejecutamos el comando ```git checkout master```
 
 
+
 ---
+---
+
 
 ## :star: RAMA NUEVA
 
 
-Para Crear una Rama Nueva utilizaremos el siguiente comando -> ```git checkout -b <nombre de la rama>```
+Para crear una **rama nueva** utilizaremos el siguiente comando -> ```git checkout -b <nombre de la rama>```
 
 
 En el momento de crear mi **rama auxiliar** o **nueva rama** mi puntero se va a posicionar en mi nueva rama de mi proyecto.
@@ -181,44 +190,65 @@ Luego commitearemos dichas modificaciones.
 ## git brach
 
 
-```git branch``` ->  Eeste comando nos permite ver todas las ramas que tenemos tanto nuestra rama Master como todas las creadas.
+```git branch``` ->  este comando nos permite ver todas las ramas que tenemos tanto nuestra rama Master como todas las creadas.
 
 
 ---
 
 ## git log --oneline --all --graph
 
-```git log --oneline --all --graph ``` -> este comando nos va a permitir ver todas las ramas en línea y con los commit (puntos)en cada rama
+```git log --oneline --all --graph ``` -> este comando nos va a permitir ver todas las ramas en línea y con los commit (puntos) en cada rama
 
 ---
 
 ## git log --oneline --all --graph --decorate
 
 
-```git log --oneline --all --graph --decorate  ``` ->  este comando nos permite ver de manera gráfica (dibujo)de las ramas que se van trabajando por separado y las modificaciones que vamos registrando.
+```git log --oneline --all --graph --decorate  ``` ->  este comando nos permite ver de manera gráfica (dibujo) de las ramas que se van trabajando por separado y las modificaciones que vamos registrando.
 
 
 ---
 
-## Actividad
+## Actividades:
+
 
 **Actividad n°1 (Clase n°4)**: Responder cuestionario para asistencia
 
+
 **Actividad n°2 (clase n° 4)**:
 
-- 1- Creamos carpeta desde Git Bash «Practica»
+- 1 - Creamos carpeta desde Git Bash «Practica»
 
-- 2-Añadimos un archivo Readme y realizamos modificaciones en el.
+```
+> mkdir practica
+```
+
+
+- 2 - Añadimos un archivo Readme y realizamos modificaciones en el.
+
+
+Primero abro con el VSC
+```
+> code practica
+```
+
+Dentro del VSC añado REDME.md y escribo cosas para tenerlas en el stage
+
 
 - 3- utilizamos comandos ```git checkout``` y ```git log```
 
+
 **Actividad n° 3(clase4)**:
 
-Creamos una rama nueva con el nombre «Práctica» 
+- Creamos una rama nueva con el nombre «Práctica» 
 
-Aplicamos los comandos git log vistos en la clase
+La voy a crear dentro de la carpeta que ya cree la semana pasada llamada **tecnicatura_git**:
 
-Seguir los pasos que están en el aula del campus
+
+
+- Aplicamos los comandos git log vistos en la clase
+
+- Seguir los pasos que están en el aula del campus
 
 ---
 ---
