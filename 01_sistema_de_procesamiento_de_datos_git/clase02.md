@@ -330,6 +330,12 @@ Ctrl + X
 
 **Paso 1**: Una vez que tenemos ya creadas las carpetas Tecnicatura Git y las subcarpetas Java y Python con sus respectivos archivos dentro.
 
+```
+$ mkdir tecnicatura_git
+$ cd tecnicatura_git/
+$ mkdir java
+$ mkdir python
+```
 
 **Paso 2**: Tecleamos ```git status``` ->  veremos los archivos listos para ser enviados a nuestra área de preparación, los archivos deben figurar en color rojo.
 
@@ -351,7 +357,7 @@ Para borrar el archivo del área de preparación ```git reset .```
 
 En la primera línea escribimos ``` mi primer commit de git```
 
-Guardamos nuestro mensaje del editor con : **w**  o  **Ctrl S** y **Ctrl. x** para salir del editor .
+Guardamos nuestro mensaje del editor con : **w**  o  **Ctrl + S** y **Ctrl + x** para salir del editor.
 
 Otra opción es: ```git commit --m  "mi primer commit de git" ```y damos enter
 
@@ -365,6 +371,13 @@ Otra opción es: ```git commit --m  "mi primer commit de git" ```y damos enter
 ### :star: Tarea
 
 Crear el commit con los archivos agregados
+
+```
+juan@user MINGW64 ~/Desktop/EUGE CASA/tecnicatura/sistema_procesamiento_datos (main)
+$ git commit -m "actualizo cosas de la clase 2 y tambien la carpeta tecnicatura_git con la practica"
+[main 6bff9af] actualizo cosas de la clase 2 y tambien la carpeta tecnicatura_git con la practica
+ 1 file changed, 71 insertions(+), 27 deletions(-)
+```
 
 ---
 ---
