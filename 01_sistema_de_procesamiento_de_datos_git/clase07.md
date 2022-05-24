@@ -2,7 +2,7 @@
 
 ## :book: Clase de repaso de Comandos y Ejercitación de clases vistas:
 
---
+---
 ---
 
 ### Sintaxis en Git:
