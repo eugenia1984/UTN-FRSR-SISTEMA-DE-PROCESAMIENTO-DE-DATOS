@@ -96,7 +96,10 @@ MASTER  * ---> * -------------------------->*
 NEW_FEATURE       -------------------------
      
 ```
+
 ---
+---
+
 
 ## :star: ¿Qué es Git Merge?
 
@@ -105,13 +108,28 @@ NEW_FEATURE       -------------------------
 Cuando se usa el comando de fusión en Git, solo se actualiza la rama actual para reflejar la fusión y la rama de destino no se ve afectada. Esto significa que, a menudo, Git Merge se usa junto con git checkout para seleccionar la rama actual y git branch para eliminar una rama fuente desactualizada.
 
 
--> Git Merge es un comando para fusionar ramas en Git
+-> ```git merge``` es un comando para fusionar ramas en Git
+
+
+---
 
 ### ¿Cómo funciona Git Merge?:
 
-El uso principal del comando Git Merge es fusionar dos ramas. También se utiliza para fusionar cadenas de confirmación en un historial unificado.
+El uso principal del comando ```git merge``` es fusionar dos ramas. 
 
-Para comprender cómo funciona el comando Git Merge, tomaremos un ejemplo de combinación de ramas. En la siguiente ilustración, Git Merge tomará dos ramas y encontrará una confirmación de base común entre ellas. Cuando Git encuentra una confirmación de base común, crea una nueva confirmación de combinación y combina los cambios en la secuencia de cada confirmación de combinación. Aquí, tenemos 2 sucursales: sucursal principal y sucursal de etapa. Ahora, fusionaremos la rama del escenario con la rama principal.
+También se utiliza para fusionar cadenas de confirmación en un historial unificado.
+
+Para comprender cómo funciona el comando ```git merge```, tomaremos un ejemplo de combinación de ramas. 
+
+En la siguiente ilustración, Git Merge tomará dos ramas y encontrará una confirmación de base común entre ellas. 
+```
+main x ----- x ------- x ------- x ------- x
+                 |                |
+          branch x ----- x -------
+```
+Cuando Git encuentra una confirmación de base común, crea una nueva confirmación de combinación y combina los cambios en la secuencia de cada confirmación de combinación. 
+
+Aquí, tenemos 2 sucursales: sucursal principal y sucursal de etapa. Ahora, fusionaremos la rama del escenario con la rama principal.
 
 
 ### Cómo fusionar las ramas que hemos creado?
@@ -123,9 +141,10 @@ Para comprender cómo funciona el comando Git Merge, tomaremos un ejemplo de com
 
 **«Siempre tener en cuenta que cuando se mezclan ramas se debe tener cuidado con los archivos que se han tocado. Cuando no se tocan los mismos archivos no hay inconvenientes, pero cuando se tocan los mismos archivos git no sabrá cuál archivo agregar y habrá un conflicto.»**
 
+
 ### ¿Qué pasa si sólo aplicamos el siguiente comando?:
 
-```> git merge <el nombre de la rama que quiero fusionar>``` nos Abrirá un editor de texto ( Vim, Atomo, Nano, VSC, etc.)
+```> git merge <el nombre de la rama que quiero fusionar>``` nos abrirá un editor de texto(Vim, Atom, Nano, VSC, etc.)
 
 -> ```«colocaremos la mezcla de la rama master con la nueva rama»```
 
@@ -141,7 +160,10 @@ Tecleamos:
 
 Nos aparecerá   el commit con la fusión con el fin de la rama e integrándose  a la Rama Master.
 
+
 ---
+---
+
 
 ## :star: Para eliminar mi fusión de ramas:
 
@@ -153,19 +175,27 @@ En caso que se produzca un conflicto en mis ramas, con el siguiente comando hace
 
 ### ¿Cómo eliminar una rama?
 
+
 -> Estando ubicados en la rama Master, borramos la rama auxiliar que habíamos creado.
+
 
 -> ```> git branch -D <nombre de la rama>``` 
 
-(No se puede eliminar una rama en la cual estás ubicado)
+-No se puede eliminar una rama en la cual estás ubicado
 
-(La opción -D siempre debe ser mayúscula)
+-La opción -D siempre debe ser mayúscula
+
 
 -> Se eliminará la rama creada
 
+
 -> Tecleamos: ``` > git log --oneline --all --graph --decorate```
 
+
 ->Nos aparecerá la rama Master, pero desaparece la que habíamos creado.
+
+
+---
 
 ### ¿Cómo resolver conflictos en el merge de ramas?
 
@@ -202,7 +232,9 @@ Si abrimos el editor Visual Studio Code el documento Readme sale marcado y divid
 
 Cuando hemos realizado modificaciones en el mismo archivo GIT que hay un conflicto en el archivo que se han hecho modificaciones en ambas ramas.
 
-Para solucionar este conflicto se realizara manualmente en nuestro documento y eliminamos todo  que no vamos a utilizar. Mucho cuidado de no eliminar comandos importantes en nuestro códigos
+Para solucionar este conflicto se realizara manualmente en nuestro documento y eliminamos todo  que no vamos a utilizar. 
+
+**Mucho cuidado de no eliminar comandos importantes en nuestro códigos.**
 
 
 En nuestra ventana de comandos ejecutaremos ```> git status```
@@ -211,7 +243,7 @@ Nos mostrará las modificaciones  realizadas en nuestro documento, nos dirá tam
 
 Añadiremos los archivos modificados con ```> git add . <nombre del archivo>```
 
-uego commitearemos la documentación  corregida y que ya añadimos para poder logras la fusión de ambas ramas. Utilizaremos  ```>git commit -m <comentario de la modificación que realizamos> ```
+Luego commitearemos la documentación  corregida y que ya añadimos para poder logras la fusión de ambas ramas. Utilizaremos  ```>git commit -m <comentario de la modificación que realizamos> ```
 
 
 Nos mostrará  que la fusión ya se realizó y ya no figurará **Master/Merging** en nuestra repositorio, y también el número de hash del commit donde estaba el conflicto y volverá a decir sólo  **Master**
@@ -232,23 +264,34 @@ Los archivos volverán a un estado anterior. Volveremos a un estado anterior don
 
 Si trabajaron varias ramas en un mismo archivo se pueden generar conflictos si trabajan las mismas líneas de códigos.
 
-```> git merge «nombre de la rama a eliminar»``` para abortar el merge  si no se pude solucionar el conflicto
+```> git merge <nombre de la rama a eliminar>``` para abortar el merge  si no se pude solucionar el conflicto
+
 
 ```>git merge --abort```
 
+
 ```>git add``` añadiremos las modificaciones hechas
 
-```Git commit``` commitearemos lo que añadimos a nuestra área  de preparación con -> ```> git commit –m "comentario"```
+
+```git commit``` commitearemos lo que añadimos a nuestra área  de preparación con -> ```> git commit –m "comentario"```
+
 
 ```>git branch``` Nos aparecerán  las ramas
 
+
 ```>git branch -d``` eliminaremos las ramas que ya no utilicemos
+
 
 Con el comando ```>git branch```  podemos ver que ramas tenemos y con el comando ```>git branch  -D <nombre de la rama que eliminaremos>``` elimina la rama que ya no utilicemos.
 
-Importante: Recordar estar siempre ubicados en nuestra rama (Master o Main)
+
+**Importante: Recordar estar siempre ubicados en nuestra rama (Master o Main)**
+
 
 Veremos en nuestra terminal de Git Bach ejecutando el comando
+
+
+---
 
 ### :star: Git branch
 
@@ -259,15 +302,23 @@ Si ejecutamos  ```>git log --oneline --all --graph --decorate```  podremos ver q
 ---
 ---
 
+# Actividades:
+
+
 ## :star:  Actividad n°1 :
 
 Responder cuestionario en Aula del Campus: (Es sólo para asistencia de 19 a 23 hs.)
 
+
+
 ## :star: Actividad n° 2 : Ejecutar comandos vistos durante la clase
+
 
 Actividad clase n° 5 Git :
 
+
 Realiza  los siguientes pasos de la actividad n°2:
+
 
 ```
 Paso 1: Creamos una nueva rama llamada IMAGEN: > git checkout –b “imagen”
