@@ -4,11 +4,13 @@ ESPAÑOL
 
 Temas:
 
-- [Sistema de procsesamiento de datos: GIT](https://github.com/eugenia1984/UTN-FRSR-SISTEMA-DE-PROCESAMIENTO-DE-DATOS/tree/main/01_sistema_de_procesamiento_de_datos_git)
+- [Sistema de procesamiento de datos: GIT](https://github.com/eugenia1984/UTN-FRSR-SISTEMA-DE-PROCESAMIENTO-DE-DATOS/tree/main/01_sistema_de_procesamiento_de_datos_git)
+
+- [Guia de comandos de GIT](https://github.com/eugenia1984/UTN-FRSR-SISTEMA-DE-PROCESAMIENTO-DE-DATOS/tree/main/guia_de_comandos_git.pfd)
 
 - Base de Datos Relacionales: MySQL
 
-- GitHub
+
 
 ---
 
