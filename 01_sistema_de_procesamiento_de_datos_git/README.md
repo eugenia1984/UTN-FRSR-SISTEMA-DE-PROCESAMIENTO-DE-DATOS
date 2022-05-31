@@ -17,3 +17,6 @@ Se guarda la teoría por cada clase vista:
 :star: [6ta clase : 18 Mayo - GIT](https://github.com/eugenia1984/UTN-FRSR-SISTEMA-DE-PROCESAMIENTO-DE-DATOS/blob/main/01_sistema_de_procesamiento_de_datos_git/clase06.md)
 
 :star: [7ma clase: 24 Mayo - GIT](https://github.com/eugenia1984/UTN-FRSR-SISTEMA-DE-PROCESAMIENTO-DE-DATOS/blob/main/01_sistema_de_procesamiento_de_datos_git/clase07.md)
+
+
+:star: [8va clase: 31 Mayo - GIT - ramas auxiliares](https://github.com/eugenia1984/UTN-FRSR-SISTEMA-DE-PROCESAMIENTO-DE-DATOS/blob/main/01_sistema_de_procesamiento_de_datos_git/clase08.md)
