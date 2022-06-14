@@ -7,6 +7,7 @@
 ###  Recordatorio de la clase anterior:
 
 •Estuvimos viendo comandos básicos.
+
 •Evaluamos algunos contenidos vistos.
 
 ---
@@ -22,6 +23,8 @@
            ---- X ------X---
            |               |
 X ---- X ---- X ----- X ----- X master
+
+``` 
 
 ----
 
