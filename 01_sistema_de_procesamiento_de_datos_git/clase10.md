@@ -82,14 +82,15 @@ Para poder visualizar todas las ramas y commits vamos a utilizar
 
 #### Actividad nº1:
 
-Realizar cuestionario para asistencia en el aula del campus de 19hs. a 23hs.
+Realizar cuestionario para asistencia en el aula del campus de 19hs. a 23hs. -> Es una actividad individual
 
 
 #### Actividad nº 2:
 
 Todos aquellos alumnos que no han aprobado los cuestionarios anteriores tendrán habilitado un cuestionario recuperatorio individual de 10 min. Desde las  22hs. a 22: 1Ohs. Lean bien las consignas antes de responder, tener apuntes de clase. 
+-> Es una actividad individual
 
-#### Actividad nº 3:
+#### Actividad nº 3:  (actividad realizada en grupo y entregada)
 
 - 1 - Crear un repositorio con el nombre Clase10
 
